@@ -74,15 +74,15 @@ npm install --save-dev aurora-utilities
 
 2.  Import `aurora-utilities` into your main sass file:
 
-```scss
-@import 'aurora-utilities';
-```
+    ```scss
+    @import 'aurora-utilities';
+    ```
 
 3.  Use the bundled functions and mixins as required:
 
-```scss
-.link {
-  @include link($primary, $accent);
-  @include decorative-link('\u007');
-}
-```
+    ```scss
+    .link {
+      @include link($primary, $accent);
+      @include decorative-link('\u007');
+    }
+    ```
