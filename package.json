@@ -4,17 +4,16 @@
   "description": "Sass and JavaScript utilities for all your front end projects.",
   "main": "index.js",
   "scripts": {
+    "format": "prettier --write \"**/**/*.{js,jsx,scss}\"",
+    "stylelint": "stylelint \"**/**/*.{css,scss}\"",
+    "stylelint:fix": "stylelint \"**/**/*.{css,scss}\" --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/carrieforde/Aurora-Utilities.git"
   },
-  "keywords": [
-    "sass",
-    "javascript",
-    "utilities"
-  ],
+  "keywords": ["sass", "javascript", "utilities"],
   "author": "Carrie Forde <carrie@carrieforde.com> (https://carrieforde.com)",
   "license": "ISC",
   "bugs": {
