@@ -9,6 +9,9 @@
     "stylelint:fix": "stylelint \"**/**/*.{css,scss}\" --fix",
     "test": "stylelint \"**/**/*.{css,scss}\""
   },
+  "bin": {
+    "au-config": "./bin/au-config.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/carrieforde/Aurora-Utilities.git"
@@ -26,6 +29,7 @@
   "homepage": "https://github.com/carrieforde/Aurora-Utilities#readme",
   "devDependencies": {
     "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
     "prettier": "^1.12.1",
     "stylelint": "^9.2.0",
