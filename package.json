@@ -20,5 +20,14 @@
   "bugs": {
     "url": "https://github.com/carrieforde/Aurora-Utilities/issues"
   },
-  "homepage": "https://github.com/carrieforde/Aurora-Utilities#readme"
+  "homepage": "https://github.com/carrieforde/Aurora-Utilities#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-plugin-prettier": "^2.6.0",
+    "prettier": "^1.12.1",
+    "stylelint": "^9.2.0",
+    "stylelint-config-recommended-scss": "^3.2.0",
+    "stylelint-order": "^0.8.1",
+    "stylelint-scss": "^3.1.0"
+  }
 }
