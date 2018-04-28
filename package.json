@@ -1,0 +1,24 @@
+{
+  "name": "aurora-utilities",
+  "version": "1.0.0",
+  "description": "Sass and JavaScript utilities for all your front end projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carrieforde/Aurora-Utilities.git"
+  },
+  "keywords": [
+    "sass",
+    "javascript",
+    "utilities"
+  ],
+  "author": "Carrie Forde <carrie@carrieforde.com> (https://carrieforde.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carrieforde/Aurora-Utilities/issues"
+  },
+  "homepage": "https://github.com/carrieforde/Aurora-Utilities#readme"
+}
