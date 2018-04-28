@@ -7,7 +7,7 @@
     "format": "prettier --write \"**/**/*.{js,jsx,scss}\"",
     "stylelint": "stylelint \"**/**/*.{css,scss}\"",
     "stylelint:fix": "stylelint \"**/**/*.{css,scss}\" --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "stylelint \"**/**/*.{css,scss}\""
   },
   "repository": {
     "type": "git",
