@@ -19,7 +19,11 @@
     "type": "git",
     "url": "git+https://github.com/carrieforde/Aurora-Utilities.git"
   },
-  "keywords": ["sass", "javascript", "utilities"],
+  "keywords": [
+    "sass",
+    "javascript",
+    "utilities"
+  ],
   "author": "Carrie Forde <carrie@carrieforde.com> (https://carrieforde.com)",
   "license": "ISC",
   "bugs": {
@@ -45,5 +49,8 @@
     "stylelint-config-recommended-scss": "^3.2.0",
     "stylelint-order": "^0.8.1",
     "stylelint-scss": "^3.1.0"
+  },
+  "dependencies": {
+    "npm": "^6.0.0"
   }
 }
