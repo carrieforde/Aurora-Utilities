@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/carrieforde/Aurora-Utilities.svg?branch=master)](https://travis-ci.org/carrieforde/Aurora-Utilities)
+
 # Aurora Utilities
 
 Sass and JavaScript utilities for all your front end projects.
