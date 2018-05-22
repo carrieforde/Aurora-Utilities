@@ -60,6 +60,12 @@
     transition: margin 0.3s ease-in-out;
   }
 
+  &:visited {
+    &:after {
+      color: $after-color-visited;
+    }
+  }
+
   &:focus,
   &:hover {
     &:after {
@@ -69,10 +75,8 @@
   }
 
   &:active {
+    &:after {
     color: $after-color-active;
-  }
-
-  &:visited {
-    color: $after-color-visited;
+    }
   }
 }
