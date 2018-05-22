@@ -23,13 +23,13 @@
 ) {
   background-color: $background;
   border: $border;
-  color: $text-default-dark;
+  color: contrast($background);
 
   &:focus,
   &:hover {
     background-color: $background-hover;
     border: $border-hover;
-    color: $text-default-dark;
+    color: contrast($background-hover);
   }
 
   &:disabled {
@@ -39,7 +39,7 @@
   &:active {
     background-color: $background-active;
     border: $border-active;
-    color: $text-default-dark;
+    color: contrast($background-active);
   }
 }
 
