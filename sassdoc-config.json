@@ -1,0 +1,21 @@
+{
+  "dest": "docs",
+  "theme": "herman",
+  "groups": {
+    "Settings": {
+      "01-colors": "Colors",
+      "01-typography": "Typography",
+      "01-icons": "Icons",
+      "01-sizes": "Sizes",
+      "01-breakpoints": "Breakpoints",
+      "01-z-index": "Z Indeces"
+    },
+    "Tools": {
+      "02-functions": "Functions",
+      "02-mixins": "Mixins"
+    }
+  },
+  "herman": {
+    "displayColors": ["hex"]
+  }
+}

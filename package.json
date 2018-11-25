@@ -8,6 +8,7 @@
     "eslint:fix": "eslint \"src/**/*.{js,jsx}\" --quiet --fix",
     "flow": "flow",
     "format": "prettier --write \"**/**/*.{js,jsx,scss}\"",
+    "sassdoc": "sassdoc sass -c sassdoc-config.json",
     "stylelint": "stylelint \"**/**/*.{css,scss}\"",
     "stylelint:fix": "stylelint \"**/**/*.{css,scss}\" --fix",
     "test": "NODE_ENV=test jest"
@@ -44,7 +45,10 @@
     "eslint-plugin-prettier": "^2.6.0",
     "flow-bin": "^0.71.0",
     "jest": "^22.4.3",
+    "node-sass": "^4.10.0",
     "prettier": "^1.12.1",
+    "sassdoc": "^2.5.1",
+    "sassdoc-theme-herman": "^3.0.0",
     "stylelint": "^9.2.0",
     "stylelint-config-recommended-scss": "^3.2.0",
     "stylelint-order": "^0.8.1",
