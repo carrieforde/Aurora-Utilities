@@ -1,0 +1,263 @@
+@charset "UTF-8";
+/*! json-encode: {"colors": {"primary-colors": {"900": "#082449", "800": "#0c356b", "700": "#104993", "600": "#1560c1", "500": "#2f80e8", "400": "#75abef", "300": "#b6d1f7", "200": "#dfebfb", "100": "#f6f9fe"}, "accent-colors": {"900": "#492c08", "800": "#6a410c", "700": "#935a10", "600": "#c17716", "500": "#e8982f", "400": "#f0ba75", "300": "#f7d9b6", "200": "#fbefdf", "100": "#fefdfa"}, "neutral-colors": {"900": "#27292b", "800": "#383a3e", "700": "#4e5156", "600": "#666a70", "500": "#868b92", "400": "#b4b7bb", "300": "#dadbdd", "200": "#f2f2f3", "100": "#fafafa"}, "success-colors": {"900": "#063709", "800": "#0b5c10", "700": "#0f8a15", "600": "#15c11e", "500": "#30e83a", "400": "#75f07c", "300": "#b6f7b9", "200": "#e2fce5", "100": "#f6fef6"}, "warning-colors": {"900": "#404007", "800": "#60600c", "700": "#939311", "600": "#c1c016", "500": "#e8e830", "400": "#f2f28c", "300": "#f7f7ba", "200": "#fbfbdf", "100": "#fefef6"}, "danger-colors": {"900": "#490808", "800": "#6a0c0c", "700": "#931010", "600": "#c11514", "500": "#e82f30", "400": "#ef6c6c", "300": "#f4999a", "200": "#fbdada", "100": "#fefafa"}, "editor-palette": {"primary": "#2f80e8", "accent": "#e8982f", "success": "#15c11e", "warning": "#e8e830", "danger": "#e82f30", "gray-mid": "#868b92", "gray-light": "#fafafa", "gray-dark": "#27292b"}}, "fonts": {"sans-serif": {"name": "Sans Serif", "stack": ["-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"]}, "serif": {"name": "Serif", "stack": ["Palatino Linotype", "Palatino", "Palladio", "URW Palladio L", "Book Antiqua", "Baskerville", "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", "Garamond", "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", "Georgia", "serif"]}, "monospace": {"name": "Monospace", "stack": ["SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace"]}}} */
+.box {
+  background-color: #fafafa;
+  height: 100px;
+  position: relative; }
+  .box__item {
+    background-color: #2f80e8;
+    height: 50px;
+    width: 100px; }
+    .box__item--horizontal-center {
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%); }
+    .box__item--vertical-center {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
+    .box__item--absolute-center {
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+
+.button {
+  background-color: #2f80e8;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 0.5em 1em;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease; }
+  .button:focus, .button:hover {
+    background-color: #5d9ced;
+    color: #27292b; }
+  .button:disabled {
+    background-color: #5485c3; }
+  .button:active {
+    background-color: #5d9ced;
+    color: #27292b; }
+
+.button--outline {
+  background-color: transparent;
+  border: 2px solid #2f80e8;
+  color: #2f80e8; }
+  .button--outline:focus, .button--outline:hover {
+    background-color: #2f80e8;
+    border: 2px solid #2f80e8;
+    color: #fff; }
+  .button--outline:disabled {
+    color: #5485c3; }
+  .button--outline:active {
+    background-color: #2f80e8;
+    border: 2px solid #2f80e8;
+    color: #fff; }
+
+.button--xl {
+  font-size: 2.25rem;
+  line-height: 1.5;
+  padding: 0.5em 1em; }
+
+.button--pill {
+  border-radius: 50px; }
+
+.button--hamburger {
+  background-color: transparent;
+  max-width: 20px;
+  padding: 7.5px 10px;
+  position: relative;
+  text-indent: -9999em; }
+  .button--hamburger .bars, .button--hamburger .bars:after, .button--hamburger .bars:before {
+    background-color: #2f80e8;
+    display: block;
+    height: 3px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    width: 20px; }
+  .button--hamburger .bars:after, .button--hamburger .bars:before {
+    content: ''; }
+  .button--hamburger .bars:before {
+    top: -6px; }
+  .button--hamburger .bars {
+    top: 50%;
+    transform: translateY(-50%); }
+  .button--hamburger .bars:after {
+    bottom: -6px; }
+  .button--hamburger:hover {
+    background-color: transparent; }
+    .button--hamburger:hover .bars, .button--hamburger:hover .bars:after, .button--hamburger:hover .bars:before {
+      background-color: #2f80e8; }
+  .button--hamburger--is-active:hover .bars, .button--hamburger--is-active:focus .bars, .button--hamburger--is-active:active .bars {
+    background-color: transparent; }
+  .button--hamburger--is-active .bars {
+    background-color: transparent; }
+  .button--hamburger--is-active .bars:after, .button--hamburger--is-active .bars:before {
+    background-color: #e8982f;
+    top: calc(50% - 3px / 2);
+    transform: translateY(-50%); }
+  .button--hamburger--is-active .bars:before {
+    transform: rotate(45deg); }
+  .button--hamburger--is-active .bars:after {
+    transform: rotate(-45deg); }
+
+.button--close {
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out; }
+  .button--close:after {
+    color: #2f80e8;
+    content: '\D7';
+    transition: color 0.3s ease-in-out; }
+  .button--close:focus, .button--close:hover {
+    background-color: transparent; }
+    .button--close:focus:after, .button--close:hover:after {
+      color: #2f80e8; }
+  .button--close:active {
+    background-color: transparent; }
+    .button--close:active:after {
+      color: #2f80e8; }
+
+.button--plus-minus {
+  background-color: transparent;
+  padding: 10px;
+  position: relative; }
+  .button--plus-minus:after, .button--plus-minus:before {
+    background-color: #2f80e8;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 3px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+    width: 20px; }
+  .button--plus-minus:after {
+    transform: rotate(90deg); }
+  .button--plus-minus:focus, .button--plus-minus:hover {
+    background-color: transparent; }
+    .button--plus-minus:focus:after, .button--plus-minus:focus:before, .button--plus-minus:hover:after, .button--plus-minus:hover:before {
+      color: #2f80e8; }
+  .button--plus-minus:active {
+    background-color: transparent; }
+    .button--plus-minus:active:after, .button--plus-minus:active:before {
+      color: #2f80e8; }
+  .button--plus-minus--is-active {
+    background-color: transparent; }
+    .button--plus-minus--is-active:after, .button--plus-minus--is-active:before {
+      background-color: #2f80e8; }
+    .button--plus-minus--is-active:after {
+      transform: rotate(180deg); }
+
+a {
+  color: #2f80e8;
+  transition: color 0.3s ease; }
+  a:visited {
+    color: #2f80e8; }
+  a:focus, a:hover {
+    color: #e8982f; }
+  a:active {
+    color: #e8982f; }
+
+.link-fancy:after {
+  color: #e8982f;
+  content: "\BB";
+  display: inline-block;
+  margin-left: 0.3125em;
+  transition: transform 0.3s ease-in-out; }
+
+.link-fancy:visited:after {
+  color: #e8982f; }
+
+.link-fancy:focus:after, .link-fancy:hover:after {
+  color: #e8982f;
+  transform: translateX(0.625em); }
+
+.link-fancy:active:after {
+  color: #e8982f; }
+
+.clearfix {
+  *zoom: 1;
+  background-color: #fafafa; }
+  .clearfix:after, .clearfix:before {
+    content: ' ';
+    display: table; }
+  .clearfix:after {
+    clear: both; }
+  .clearfix > div {
+    background-color: #2f80e8; }
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.full-width-parent {
+  background-color: #868b92;
+  margin: 0 auto;
+  padding: 20px;
+  width: 80%; }
+
+.full-width {
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
+  background-color: #2f80e8;
+  height: 150px; }
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+  .screen-reader-text:focus {
+    border: auto;
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto; }
+
+.image-as-background {
+  background-position: center;
+  background-size: cover;
+  height: 0;
+  width: 50%;
+  padding-top: 33.33333%; }
+
+.size {
+  height: 3.125rem;
+  width: 9.375rem;
+  background-color: #2f80e8; }
+  .size--one-parameter {
+    height: 3.125rem;
+    width: 3.125rem;
+    background-color: #e8982f; }
+
+.ratio {
+  height: 0;
+  width: 50%;
+  padding-top: 33.33333%;
+  background-color: #2f80e8; }
+  .ratio--16-9 {
+    height: 0;
+    width: 50%;
+    padding-top: 28.125%;
+    background-color: #e8982f; }
+
+
+/*# sourceMappingURL=sassdoc.css.map*/

@@ -1,0 +1,4426 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <title>Buttons | aurora-utilities Documentation</title>
+
+  <link href="assets/img/favicon.ico" rel="shortcut icon">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600|Source+Sans+Pro:400,400i,700,700i" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/webpack/app_styles.min.css" />
+
+  
+
+  
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" hidden>
+  <symbol id="icon-logo" viewBox="0 0 16 16">
+    <path d="M.2 8L0 7.8v-.2C.8 6.9 1.9 5.9 2.7 5l.4.3c-.5.8-1.1 1.6-1.8 2.3 1 1.2 1 1.3 1.7 2.4l-.4.3c-.4-.4-.5-.6-1-1C1 8.6 1.1 8.7.2 8zM13 10c.6-1.1.7-1.1 1.7-2.4-.6-.6-1.3-1.5-1.7-2.3l.3-.3c.8.8 1.8 1.8 2.7 2.6v.2l-.8.7c-.3.3-1.2 1.1-1.8 1.7L13 10z"/><path d="M2.6 13.1H3c.9 0 1.1-.2 1.1-1.4V4.2c0-1.1-.2-1.4-1.1-1.4h-.4v-.6h4.5v.7h-.3c-.9 0-1.1.2-1.1 1.4v3.2h4.6V4.2c0-1.1-.2-1.4-1.1-1.4h-.3v-.6h4.5v.7H13c-.9 0-1.1.2-1.1 1.4v7.5c0 1.1.2 1.4 1.1 1.4h.4v.7H8.9v-.7h.3c.9 0 1.1-.2 1.1-1.4V8.2H5.7v3.5c0 1.1.2 1.4 1.1 1.4h.3v.7H2.6v-.7z"/>
+  </symbol>
+  <symbol id="icon-menu" viewBox="0 0 24 28">
+    <path d="M24 21v2c0 .547-.453 1-1 1H1c-.547 0-1-.453-1-1v-2c0-.547.453-1 1-1h22c.547 0 1 .453 1 1zm0-8v2c0 .547-.453 1-1 1H1c-.547 0-1-.453-1-1v-2c0-.547.453-1 1-1h22c.547 0 1 .453 1 1zm0-8v2c0 .547-.453 1-1 1H1c-.547 0-1-.453-1-1V5c0-.547.453-1 1-1h22c.547 0 1 .453 1 1z"/>
+  </symbol>
+</svg>
+
+  <div data-region="app">
+    <header data-region="banner">
+      
+  <button data-nav-toggle data-toggle="button" aria-controls="nav" aria-pressed="false" type="button" data-toggle-synced="false">
+    
+  <svg data-icon="menu" data-icon-size="nav-icon" ><title>menu</title><use xlink:href="#icon-menu" />
+  </svg>
+
+  </button>
+
+
+      <div class="project-title">
+        <a href="index.html" rel="home" class="project-name">aurora-utilities</a>
+        
+          <span class="project-version">1.1.0</span>
+        
+      </div>
+    </header>
+
+    <div data-region="container">
+      
+  <nav data-region="nav" data-toggle="target" id="nav" data-target-id="nav" aria-expanded="false" data-auto-closing="false" data-auto-closing-on-any-click="false">
+    <form action="search.html">
+      <input type="text" name="q" placeholder="Search…" required minlength="3">
+    </form>
+
+    <div class="nav-subsection">
+      <h3 class="nav-home">
+        
+        <a href="index.html" data-nav="is-not-active">aurora-utilities</a>
+      </h3>
+
+      
+      
+    </div>
+
+    
+    <div class="nav-subsection">
+      <ul>
+            <li class="nav-subsection">
+              <h3 class="nav-title">Variables</h3>
+              <ul>
+                
+  
+    <li class="nav-item">
+      <a href="01-breakpoints.html" data-nav="is-not-active">Breakpoints</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="01-colors.html" data-nav="is-not-active">Colors</a>
+    </li>
+  
+  
+  
+    <li class="nav-item">
+      <a href="01-typography.html" data-nav="is-not-active">Typography</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="01-widths.html" data-nav="is-not-active">Widths</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="01-z-index.html" data-nav="is-not-active">Z Indeces</a>
+    </li>
+  </ul>
+            </li>
+            <li class="nav-subsection">
+              <h3 class="nav-title">Functions</h3>
+              <ul>
+                
+  
+    <li class="nav-item">
+      <a href="02-breakpoint.html" data-nav="is-not-active">Breakpoint</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="02-color.html" data-nav="is-not-active">Color</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="02-size.html" data-nav="is-not-active">Size</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="02-z-index.html" data-nav="is-not-active">Z Index</a>
+    </li>
+  </ul>
+            </li>
+            <li class="nav-subsection">
+              <h3 class="nav-title">Mixins</h3>
+              <ul>
+                
+  
+    <li class="nav-item">
+      <a href="03-colors.html" data-nav="is-not-active">Colors</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="03-buttons.html" data-nav="is-active">Buttons</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="03-links.html" data-nav="is-not-active">Links</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="03-media-queries.html" data-nav="is-not-active">Media Queries</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="03-utilities.html" data-nav="is-not-active">Utilities</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="03-positioning.html" data-nav="is-not-active">Positioning</a>
+    </li>
+  </ul>
+            </li></ul>
+    </div>
+
+    
+    
+
+    
+      <aside class="footer-credit">
+        <a href="http://oddbird.net/herman/" class="footer-icon">
+          
+  <svg data-icon="logo" data-icon-size="footer-logo" ><use xlink:href="#icon-logo" />
+  </svg>
+
+        </a>
+        <span>
+          Documented with
+          <a href="http://oddbird.net/herman/" class="footer-link">
+            Herman
+          </a>
+        </span>
+        <span>
+          by
+          <a href="http://oddbird.net/" class="footer-link">
+            OddBird
+          </a>
+        </span>
+      </aside>
+    
+  </nav>
+
+
+      <main data-region="main">
+        
+  <nav class="breadcrumb">
+    
+    <a href="index.html" >aurora-utilities</a> »
+    <strong>Buttons</strong>
+  </nav>
+
+
+        <div data-page="03-buttons">
+          
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="mixin--button">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type">@mixin</span>
+      
+
+      
+        <a href="#mixin--button" class="item-name">button()</a>
+      
+
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+  
+  
+  
+  
+
+  
+    <div class="text-block">
+      <p>Generate button variations quickly and<span class="widont">&nbsp;</span>easily.</p>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    
+  <div data-item-section="parameter">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Parameters</span>
+        
+      </h3>
+    
+
+    
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$background:</span>
+      
+      
+      <span class="value-type">(Color)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The desired background<span class="widont">&nbsp;</span>color.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$color:</span>
+      
+      <span class="item-value">contrast($background)</span>
+      <span class="value-type">(Color)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The text color.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$background-hover:</span>
+      
+      <span class="item-value">lighten($background, 10%)</span>
+      <span class="value-type">(Color)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The hover background<span class="widont">&nbsp;</span>color.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$color-hover:</span>
+      
+      <span class="item-value">contrast($background-hover)</span>
+      <span class="value-type">(Color)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The hover border (use<span class="widont">&nbsp;</span>shorthand).</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$background-active:</span>
+      
+      <span class="item-value">$background-hover</span>
+      <span class="value-type">(Color)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The active background.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$color-active:</span>
+      
+      <span class="item-value">contrast($background-active)</span>
+      <span class="value-type">(Color)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The active border.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+
+      
+  
+
+      
+  
+
+      
+  
+
+      
+  
+
+    
+  </div>
+
+  
+
+
+  
+  
+    
+
+    <div data-item-section="examples">
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Examples</span>
+      </h3>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+            <span class='code-description'>
+              Sample Usage
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">.button {
+  @include button($color-primary, $color-white);
+}</code></pre>
+    </div>
+  
+
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            css
+          </span>
+
+          
+            <span class='code-description'>
+              compiled
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-css">.button {
+  background-color: #2f80e8;
+  border: none;
+  color: #fff;
+}
+
+.button:focus, .button:hover {
+  background-color: #5d9ced;
+  color: #27292b;
+}
+
+.button:disabled {
+  background-color: #5485c3;
+}
+
+.button:active {
+  background-color: #5d9ced;
+  color: #27292b;
+}
+</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+  </div>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            html
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-html">&lt;button type=&quot;button&quot; class=&quot;button&quot;&gt;Click Me&lt;/button&gt;</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+      <div class="example-render">
+        <iframe class="render-example" srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;base target=&quot;_parent&quot;&gt;
+
+  &lt;title&gt;example&lt;/title&gt;
+
+  
+
+  
+    &lt;!-- Custom CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/custom/sassdoc.css&quot; /&gt;
+  
+&lt;/head&gt;
+&lt;body class=&quot;sassdoc&quot;&gt;
+  
+  &lt;button type=&quot;button&quot; class=&quot;button&quot;&gt;Click Me&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+" width="100%" height="0"></iframe>
+      </div>
+    
+  </div>
+
+      
+    </div>
+  
+
+
+  
+  
+  
+  
+    
+    
+  <div data-item-section="requires">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Requires</span>
+        
+      </h3>
+    
+
+    
+      
+      
+        
+        
+        
+
+        
+          
+          
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      <span class="item-type">@function</span>
+      
+        <a href="
+  02-color.html#function--tone" class="item-name">tone()</a>
+      
+      
+      
+      
+    </h4>
+
+    
+  </div>
+
+
+        
+      
+    
+  </div>
+
+  
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="mixin--button-outline">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type">@mixin</span>
+      
+
+      
+        <a href="#mixin--button-outline" class="item-name">button-outline()</a>
+      
+
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+  
+  
+  
+  
+
+  
+    <div class="text-block">
+      <p>Generate outline buttons.</p>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    
+  <div data-item-section="parameter">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Parameters</span>
+        
+      </h3>
+    
+
+    
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$border:</span>
+      
+      
+      <span class="value-type">(String)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The outline button’s<span class="widont">&nbsp;</span>border.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$color:</span>
+      
+      
+      <span class="value-type">(Color)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The button’s text<span class="widont">&nbsp;</span>color.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$border-hover:</span>
+      
+      <span class="item-value">$border</span>
+      <span class="value-type">(String)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The hover border.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$color-hover:</span>
+      
+      <span class="item-value">darken($color, 10%)</span>
+      <span class="value-type">(Color)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The hover text<span class="widont">&nbsp;</span>color.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$background-hover:</span>
+      
+      <span class="item-value">transparent</span>
+      <span class="value-type">(Color)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The hover background<span class="widont">&nbsp;</span>color.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$border-active:</span>
+      
+      <span class="item-value">$border-hover</span>
+      <span class="value-type">(String)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The active border.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$color-active:</span>
+      
+      <span class="item-value">$color-hover</span>
+      <span class="value-type">(Color)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The active text<span class="widont">&nbsp;</span>color.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$background-active:</span>
+      
+      <span class="item-value">$background-hover</span>
+      <span class="value-type">(Color)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The active background<span class="widont">&nbsp;</span>color.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+
+      
+  
+
+      
+  
+
+      
+  
+
+      
+  
+
+    
+  </div>
+
+  
+
+
+  
+  
+    
+
+    <div data-item-section="examples">
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Examples</span>
+      </h3>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+            <span class='code-description'>
+              Sample Usage
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">.button--outline {
+  @include button-outline(2px solid $color-primary, $color-primary, $color-hover: $color-white, $background-hover: $color-primary);
+}</code></pre>
+    </div>
+  
+
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            css
+          </span>
+
+          
+            <span class='code-description'>
+              compiled
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-css">.button--outline {
+  background-color: transparent;
+  border: 2px solid #2f80e8;
+  color: #2f80e8;
+}
+
+.button--outline:focus, .button--outline:hover {
+  background-color: #2f80e8;
+  border: 2px solid #2f80e8;
+  color: #fff;
+}
+
+.button--outline:disabled {
+  color: #5485c3;
+}
+
+.button--outline:active {
+  background-color: #2f80e8;
+  border: 2px solid #2f80e8;
+  color: #fff;
+}
+</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+  </div>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            html
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-html">&lt;button type=&quot;button&quot; class=&quot;button button--outline&quot;&gt;Click Me&lt;/button&gt;</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+      <div class="example-render">
+        <iframe class="render-example" srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;base target=&quot;_parent&quot;&gt;
+
+  &lt;title&gt;example&lt;/title&gt;
+
+  
+
+  
+    &lt;!-- Custom CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/custom/sassdoc.css&quot; /&gt;
+  
+&lt;/head&gt;
+&lt;body class=&quot;sassdoc&quot;&gt;
+  
+  &lt;button type=&quot;button&quot; class=&quot;button button--outline&quot;&gt;Click Me&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+" width="100%" height="0"></iframe>
+      </div>
+    
+  </div>
+
+      
+    </div>
+  
+
+
+  
+  
+  
+  
+    
+    
+  <div data-item-section="requires">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Requires</span>
+        
+      </h3>
+    
+
+    
+      
+      
+        
+        
+        
+
+        
+          
+          
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      <span class="item-type">@function</span>
+      
+        <a href="
+  02-color.html#function--tone" class="item-name">tone()</a>
+      
+      
+      
+      
+    </h4>
+
+    
+  </div>
+
+
+        
+      
+    
+  </div>
+
+  
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="mixin--button-size">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type">@mixin</span>
+      
+
+      
+        <a href="#mixin--button-size" class="item-name">button-size()</a>
+      
+
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+  
+  
+  
+  
+
+  
+    <div class="text-block">
+      <p>Create buttons of different<span class="widont">&nbsp;</span>sizes.</p>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    
+  <div data-item-section="parameter">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Parameters</span>
+        
+      </h3>
+    
+
+    
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$font-size:</span>
+      
+      
+      <span class="value-type">(Number)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The button font<span class="widont">&nbsp;</span>size.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$line-height:</span>
+      
+      <span class="item-value">unitless-calc($base-line-height, $base-font-size)</span>
+      <span class="value-type">(Number)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The text line<span class="widont">&nbsp;</span>height.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$padding:</span>
+      
+      
+      <span class="value-type">(Number(s))</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The space around<span class="widont">&nbsp;</span>text.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+
+      
+  
+
+      
+  
+
+      
+  
+
+      
+  
+
+    
+  </div>
+
+  
+
+
+  
+  
+    
+
+    <div data-item-section="examples">
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Examples</span>
+      </h3>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+            <span class='code-description'>
+              Sample Usage
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">.button--xl {
+  @include button-size(2.25rem);
+}</code></pre>
+    </div>
+  
+
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            css
+          </span>
+
+          
+            <span class='code-description'>
+              compiled
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-css">.button--xl {
+  font-size: 2.25rem;
+  line-height: 1.5;
+  padding: 0.5em 1em;
+}
+</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+  </div>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            html
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-html">&lt;button type=&quot;button&quot; class=&quot;button button--xl&quot;&gt;Click Me&lt;/button&gt;</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+      <div class="example-render">
+        <iframe class="render-example" srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;base target=&quot;_parent&quot;&gt;
+
+  &lt;title&gt;example&lt;/title&gt;
+
+  
+
+  
+    &lt;!-- Custom CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/custom/sassdoc.css&quot; /&gt;
+  
+&lt;/head&gt;
+&lt;body class=&quot;sassdoc&quot;&gt;
+  
+  &lt;button type=&quot;button&quot; class=&quot;button button--xl&quot;&gt;Click Me&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+" width="100%" height="0"></iframe>
+      </div>
+    
+  </div>
+
+      
+    </div>
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="mixin--button-style">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type">@mixin</span>
+      
+
+      
+        <a href="#mixin--button-style" class="item-name">button-style()</a>
+      
+
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+  
+  
+  
+  
+
+  
+    <div class="text-block">
+      <p>Create different styles of<span class="widont">&nbsp;</span>button.</p>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    
+  <div data-item-section="parameter">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Parameters &amp;<span class="widont">&nbsp;</span>Return</span>
+        
+      </h3>
+    
+
+    
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$string:</span>
+      
+      <span class="item-value">&#39;rounded&#39;</span>
+      <span class="value-type">(String)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The type of button to<span class="widont">&nbsp;</span>produce.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+
+      
+  
+
+      
+  
+
+      
+  
+
+      
+  
+    
+      
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">@error</span>
+      
+      
+      
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p><code>#{inspect($string)}</code> button type does not<span class="widont">&nbsp;</span>exist!</p>
+
+      </div>
+    
+  </div>
+
+    
+  
+
+    
+  </div>
+
+  
+
+
+  
+  
+    
+
+    <div data-item-section="examples">
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Examples</span>
+      </h3>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+            <span class='code-description'>
+              Sample Usage
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">.button--pill {
+  @include button-style(&#39;pill&#39;);
+}</code></pre>
+    </div>
+  
+
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            css
+          </span>
+
+          
+            <span class='code-description'>
+              compiled
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-css">.button--pill {
+  border-radius: 50px;
+}
+</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+  </div>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            html
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-html">&lt;button type=&quot;button&quot; class=&quot;button button--pill&quot;&gt;Click Me&lt;/button&gt;</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+      <div class="example-render">
+        <iframe class="render-example" srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;base target=&quot;_parent&quot;&gt;
+
+  &lt;title&gt;example&lt;/title&gt;
+
+  
+
+  
+    &lt;!-- Custom CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/custom/sassdoc.css&quot; /&gt;
+  
+&lt;/head&gt;
+&lt;body class=&quot;sassdoc&quot;&gt;
+  
+  &lt;button type=&quot;button&quot; class=&quot;button button--pill&quot;&gt;Click Me&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+" width="100%" height="0"></iframe>
+      </div>
+    
+  </div>
+
+      
+    </div>
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+    
+  <div data-item-section="todo">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">To-do List</span>
+        
+      </h3>
+    
+
+    
+      <ul>
+        
+          <li data-sassdoc="todo-item">
+            <p>Consider adding more button styles see <a href="http://unicorn-ui.com/buttons/builder/">Unicorn Buttons</a> &amp; <a href="https://labs.loupbrun.ca/buttons/">these buttons</a> are good<span class="widont">&nbsp;</span>inspiration.</p>
+
+          </li>
+        
+      </ul>
+    
+  </div>
+
+  
+
+
+  
+  
+
+  
+  
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="mixin--hamburger-button">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type">@mixin</span>
+      
+
+      
+        <a href="#mixin--hamburger-button" class="item-name">hamburger-button()</a>
+      
+
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+  
+  
+  
+  
+
+  
+    <div class="text-block">
+      <p>Create a hamburger menu button. JavaScript interaction needs to be hooked up<span class="widont">&nbsp;</span>separately.</p>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    
+  <div data-item-section="parameter">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Parameters</span>
+        
+      </h3>
+    
+
+    
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$bar-color:</span>
+      
+      
+      <span class="value-type">(Color)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The color of the hamburger<span class="widont">&nbsp;</span>bars.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$bar-hover:</span>
+      
+      
+      <span class="value-type">(Color)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The color of the bars when the button is<span class="widont">&nbsp;</span>hovered.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$bar-height:</span>
+      
+      
+      <span class="value-type">(Number)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The height of the<span class="widont">&nbsp;</span>bars.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$bar-width:</span>
+      
+      
+      <span class="value-type">(Number)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The width of the<span class="widont">&nbsp;</span>bars.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$bar-selector:</span>
+      
+      <span class="item-value">&#39;.bars&#39;</span>
+      <span class="value-type">(String)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The selector used within the button to create the<span class="widont">&nbsp;</span>bars.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+
+      
+  
+
+      
+  
+
+      
+  
+
+      
+  
+
+    
+  </div>
+
+  
+
+
+  
+  
+    
+
+    <div data-item-section="examples">
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Examples</span>
+      </h3>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+            <span class='code-description'>
+              Sample Usage
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">.button--hamburger {
+  @include hamburger-button($color-primary);
+}</code></pre>
+    </div>
+  
+
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            css
+          </span>
+
+          
+            <span class='code-description'>
+              compiled
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-css">.button--hamburger {
+  background-color: transparent;
+  max-width: 20px;
+  padding: 7.5px 10px;
+  position: relative;
+  text-indent: -9999em;
+}
+
+.button--hamburger .bars, .button--hamburger .bars:after, .button--hamburger .bars:before {
+  background-color: #2f80e8;
+  display: block;
+  height: 3px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  width: 20px;
+}
+
+.button--hamburger .bars:after, .button--hamburger .bars:before {
+  content: &#39;&#39;;
+}
+
+.button--hamburger .bars:before {
+  top: -6px;
+}
+
+.button--hamburger .bars {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.button--hamburger .bars:after {
+  bottom: -6px;
+}
+
+.button--hamburger:hover {
+  background-color: transparent;
+}
+
+.button--hamburger:hover .bars, .button--hamburger:hover .bars:after, .button--hamburger:hover .bars:before {
+  background-color: #2f80e8;
+}
+</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+  </div>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            html
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-html">&lt;button type=&quot;button&quot; class=&quot;button button--hamburger&quot;&gt;
+  Menu
+  &lt;span class=&quot;bars&quot;&gt;&lt;/span&gt;
+&lt;/button&gt;</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+      <div class="example-render">
+        <iframe class="render-example" srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;base target=&quot;_parent&quot;&gt;
+
+  &lt;title&gt;example&lt;/title&gt;
+
+  
+
+  
+    &lt;!-- Custom CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/custom/sassdoc.css&quot; /&gt;
+  
+&lt;/head&gt;
+&lt;body class=&quot;sassdoc&quot;&gt;
+  
+  &lt;button type=&quot;button&quot; class=&quot;button button--hamburger&quot;&gt;Menu &lt;span class=&quot;bars&quot;&gt;&lt;/span&gt;
+
+&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+" width="100%" height="0"></iframe>
+      </div>
+    
+  </div>
+
+      
+    </div>
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="mixin--hamburger-button-active">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type">@mixin</span>
+      
+
+      
+        <a href="#mixin--hamburger-button-active" class="item-name">hamburger-button-active()</a>
+      
+
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+  
+  
+  
+  
+
+  
+    <div class="text-block">
+      <p>Transforms the hamburger button into an<span class="widont">&nbsp;</span>X.</p>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    
+  <div data-item-section="parameter">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Parameters</span>
+        
+      </h3>
+    
+
+    
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$bar-color:</span>
+      
+      
+      <span class="value-type">(Color)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The active color of<span class="widont">&nbsp;</span>bars.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$bar-height:</span>
+      
+      
+      <span class="value-type">(Number)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The height of the<span class="widont">&nbsp;</span>bars.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$bar-selector:</span>
+      
+      <span class="item-value">&#39;.bars&#39;</span>
+      <span class="value-type">(String)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The selector used within the button to create the<span class="widont">&nbsp;</span>bars.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+
+      
+  
+
+      
+  
+
+      
+  
+
+      
+  
+
+    
+  </div>
+
+  
+
+
+  
+  
+    
+
+    <div data-item-section="examples">
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Examples</span>
+      </h3>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+            <span class='code-description'>
+              Sample Usage
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">.button--hamburger {
+   @include hamburger-button($color-primary);
+
+   &amp;--is-active {
+     @include hamburger-button-active($color-accent);
+   }
+}</code></pre>
+    </div>
+  
+
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            css
+          </span>
+
+          
+            <span class='code-description'>
+              compiled
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-css">.button--hamburger {
+  background-color: transparent;
+  max-width: 20px;
+  padding: 7.5px 10px;
+  position: relative;
+  text-indent: -9999em;
+}
+
+.button--hamburger .bars, .button--hamburger .bars:after, .button--hamburger .bars:before {
+  background-color: #2f80e8;
+  display: block;
+  height: 3px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  width: 20px;
+}
+
+.button--hamburger .bars:after, .button--hamburger .bars:before {
+  content: &#39;&#39;;
+}
+
+.button--hamburger .bars:before {
+  top: -6px;
+}
+
+.button--hamburger .bars {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.button--hamburger .bars:after {
+  bottom: -6px;
+}
+
+.button--hamburger:hover {
+  background-color: transparent;
+}
+
+.button--hamburger:hover .bars, .button--hamburger:hover .bars:after, .button--hamburger:hover .bars:before {
+  background-color: #2f80e8;
+}
+
+.button--hamburger--is-active:hover .bars, .button--hamburger--is-active:focus .bars, .button--hamburger--is-active:active .bars {
+  background-color: transparent;
+}
+
+.button--hamburger--is-active .bars {
+  background-color: transparent;
+}
+
+.button--hamburger--is-active .bars:after, .button--hamburger--is-active .bars:before {
+  background-color: #e8982f;
+  top: calc(50% - 3px / 2);
+  transform: translateY(-50%);
+}
+
+.button--hamburger--is-active .bars:before {
+  transform: rotate(45deg);
+}
+
+.button--hamburger--is-active .bars:after {
+  transform: rotate(-45deg);
+}
+</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+  </div>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            html
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-html">&lt;button type=&quot;button&quot; class=&quot;button button--hamburger button--hamburger--is-active&quot;&gt;
+  Menu
+  &lt;span class=&quot;bars&quot;&gt;&lt;/span&gt;
+&lt;/button&gt;</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+      <div class="example-render">
+        <iframe class="render-example" srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;base target=&quot;_parent&quot;&gt;
+
+  &lt;title&gt;example&lt;/title&gt;
+
+  
+
+  
+    &lt;!-- Custom CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/custom/sassdoc.css&quot; /&gt;
+  
+&lt;/head&gt;
+&lt;body class=&quot;sassdoc&quot;&gt;
+  
+  &lt;button type=&quot;button&quot; class=&quot;button button--hamburger button--hamburger--is-active&quot;&gt;Menu &lt;span class=&quot;bars&quot;&gt;&lt;/span&gt;
+
+&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+" width="100%" height="0"></iframe>
+      </div>
+    
+  </div>
+
+      
+    </div>
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="mixin--close-button">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type">@mixin</span>
+      
+
+      
+        <a href="#mixin--close-button" class="item-name">close-button()</a>
+      
+
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+  
+  
+  
+  
+
+  
+    <div class="text-block">
+      <p>Create a close<span class="widont">&nbsp;</span>button.</p>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    
+  <div data-item-section="parameter">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Parameters</span>
+        
+      </h3>
+    
+
+    
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$x-color:</span>
+      
+      
+      <span class="value-type">(Color)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The desired X<span class="widont">&nbsp;</span>color.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$x-size:</span>
+      
+      <span class="item-value">1rem</span>
+      <span class="value-type">(Number)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The font-size of the<span class="widont">&nbsp;</span>X.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$background:</span>
+      
+      <span class="item-value">transparent</span>
+      <span class="value-type">(Color)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The desired background<span class="widont">&nbsp;</span>color.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$hover-x-color:</span>
+      
+      <span class="item-value">$x-color</span>
+      <span class="value-type">(Color)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The hover X<span class="widont">&nbsp;</span>color.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$background-hover:</span>
+      
+      <span class="item-value">$background</span>
+      <span class="value-type">(Color)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The hover background<span class="widont">&nbsp;</span>color.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$active-x-color:</span>
+      
+      <span class="item-value">$hover-x-color</span>
+      <span class="value-type">(Color)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The active X<span class="widont">&nbsp;</span>color.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$active-background:</span>
+      
+      <span class="item-value">$hover-background</span>
+      <span class="value-type">(Color)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The active background.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+
+      
+  
+
+      
+  
+
+      
+  
+
+      
+  
+
+    
+  </div>
+
+  
+
+
+  
+  
+    
+
+    <div data-item-section="examples">
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Examples</span>
+      </h3>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+            <span class='code-description'>
+              Sample Usage
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">.button--close {
+  @include close-button($color-primary, transparent);
+}</code></pre>
+    </div>
+  
+
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            css
+          </span>
+
+          
+            <span class='code-description'>
+              compiled
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-css">.button--close {
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button--close:after {
+  color: #2f80e8;
+  content: &#39;\00D7&#39;;
+  transition: color 0.3s ease-in-out;
+}
+
+.button--close:focus, .button--close:hover {
+  background-color: transparent;
+}
+
+.button--close:focus:after, .button--close:hover:after {
+  color: #2f80e8;
+}
+
+.button--close:active {
+  background-color: transparent;
+}
+
+.button--close:active:after {
+  color: #2f80e8;
+}
+</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+  </div>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            html
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-html">&lt;button type=&quot;button&quot; class=&quot;button button--close&quot;&gt;
+  &lt;span class=&quot;screen-reader-text&gt;Close&lt;/span&gt; &lt;!-- assumes a .screen-reader-text class using @include screen-reader exists. --&gt;
+&lt;/button&gt;</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+      <div class="example-render">
+        <iframe class="render-example" srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;base target=&quot;_parent&quot;&gt;
+
+  &lt;title&gt;example&lt;/title&gt;
+
+  
+
+  
+    &lt;!-- Custom CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/custom/sassdoc.css&quot; /&gt;
+  
+&lt;/head&gt;
+&lt;body class=&quot;sassdoc&quot;&gt;
+  
+  &lt;button type=&quot;button&quot; class=&quot;button button--close&quot;&gt;
+  &lt;span class=&quot;screen-reader-text&gt;Close&lt;/span&gt; &lt;!-- assumes a .screen-reader-text class using @include screen-reader exists. --&gt;
+&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+" width="100%" height="0"></iframe>
+      </div>
+    
+  </div>
+
+      
+    </div>
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="mixin--plus-minus-button">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type">@mixin</span>
+      
+
+      
+        <a href="#mixin--plus-minus-button" class="item-name">plus-minus-button()</a>
+      
+
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+  
+  
+  
+  
+
+  
+    <div class="text-block">
+      <p>Creates a Plus-Minus button. Requires JavaScript be implemented<span class="widont">&nbsp;</span>separately.</p>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    
+  <div data-item-section="parameter">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Parameters &amp;<span class="widont">&nbsp;</span>Return</span>
+        
+      </h3>
+    
+
+    
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$bar-color:</span>
+      
+      
+      <span class="value-type">(Color)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The color of the plus-minus<span class="widont">&nbsp;</span>bars.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$bar-height:</span>
+      
+      
+      <span class="value-type">(Number)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The height of the<span class="widont">&nbsp;</span>bars.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$bar-width:</span>
+      
+      
+      <span class="value-type">(Number)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The width of the<span class="widont">&nbsp;</span>bars.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$background:</span>
+      
+      <span class="item-value">transparent</span>
+      <span class="value-type">(Color)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The button background.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$include-active:</span>
+      
+      <span class="item-value">false</span>
+      <span class="value-type">(Boolean)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>Determines whether to include styling for the active state. Allows different classes or modifiers to be<span class="widont">&nbsp;</span>used.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$active-selector:</span>
+      
+      <span class="item-value">null</span>
+      <span class="value-type">(String)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The name of the selector to trigger the active state. Can include <code>&amp;</code>.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+
+      
+  
+
+      
+  
+
+      
+  
+
+      
+  
+    
+      
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">@error</span>
+      
+      
+      
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p><code>$include-active</code> requires <code>$active-selector</code> to be<span class="widont">&nbsp;</span>specified.</p>
+
+      </div>
+    
+  </div>
+
+    
+  
+
+    
+  </div>
+
+  
+
+
+  
+  
+    
+
+    <div data-item-section="examples">
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Examples</span>
+      </h3>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+            <span class='code-description'>
+              Sample Usage
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">.button--plus-minus {
+  @include plus-minus-button($color-primary);
+}</code></pre>
+    </div>
+  
+
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            css
+          </span>
+
+          
+            <span class='code-description'>
+              compiled
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-css">.button--plus-minus {
+  background-color: transparent;
+  padding: 10px;
+  position: relative;
+}
+
+.button--plus-minus:after, .button--plus-minus:before {
+  background-color: #2f80e8;
+  bottom: 0;
+  content: &#39;&#39;;
+  display: block;
+  height: 3px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+  width: 20px;
+}
+
+.button--plus-minus:after {
+  transform: rotate(90deg);
+}
+
+.button--plus-minus:focus, .button--plus-minus:hover {
+  background-color: transparent;
+}
+
+.button--plus-minus:focus:after, .button--plus-minus:focus:before, .button--plus-minus:hover:after, .button--plus-minus:hover:before {
+  color: #2f80e8;
+}
+
+.button--plus-minus:active {
+  background-color: transparent;
+}
+
+.button--plus-minus:active:after, .button--plus-minus:active:before {
+  color: #2f80e8;
+}
+</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+  </div>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            html
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-html">&lt;button type=&quot;button&quot; class=&quot;button button--plus-minus&quot;&gt;
+  &lt;span class=&quot;screen-reader-text&gt;Expand&lt;/span&gt; &lt;!-- assumes a .screen-reader-text class using @include screen-reader exists. --&gt;
+&lt;/button&gt;</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+      <div class="example-render">
+        <iframe class="render-example" srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;base target=&quot;_parent&quot;&gt;
+
+  &lt;title&gt;example&lt;/title&gt;
+
+  
+
+  
+    &lt;!-- Custom CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/custom/sassdoc.css&quot; /&gt;
+  
+&lt;/head&gt;
+&lt;body class=&quot;sassdoc&quot;&gt;
+  
+  &lt;button type=&quot;button&quot; class=&quot;button button--plus-minus&quot;&gt;
+  &lt;span class=&quot;screen-reader-text&gt;Expand&lt;/span&gt; &lt;!-- assumes a .screen-reader-text class using @include screen-reader exists. --&gt;
+&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+" width="100%" height="0"></iframe>
+      </div>
+    
+  </div>
+
+      
+    </div>
+  
+
+
+  
+  
+  
+  
+    
+    
+  <div data-item-section="requires">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Requires</span>
+        
+      </h3>
+    
+
+    
+      
+      
+        
+        
+        
+
+        
+          
+          
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      <span class="item-type">@mixin</span>
+      
+        <a href="
+  03-buttons.html#mixin--plus-minus-button-active" class="item-name">plus-minus-button-active()</a>
+      
+      
+      
+      
+    </h4>
+
+    
+  </div>
+
+
+        
+      
+    
+  </div>
+
+  
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="mixin--plus-minus-button-active">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type">@mixin</span>
+      
+
+      
+        <a href="#mixin--plus-minus-button-active" class="item-name">plus-minus-button-active()</a>
+      
+
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+  
+  
+  
+  
+
+  
+    <div class="text-block">
+      <p>Styles the active (minus) state of the Plus-Minus<span class="widont">&nbsp;</span>button.</p>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    
+  <div data-item-section="parameter">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Parameters</span>
+        
+      </h3>
+    
+
+    
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$active-bar-color:</span>
+      
+      
+      <span class="value-type">(Color)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The color of the<span class="widont">&nbsp;</span>minus.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$active-background:</span>
+      
+      <span class="item-value">transparent</span>
+      <span class="value-type">(Color)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The button background<span class="widont">&nbsp;</span>color.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+
+      
+  
+
+      
+  
+
+      
+  
+
+      
+  
+
+    
+  </div>
+
+  
+
+
+  
+  
+    
+
+    <div data-item-section="examples">
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Examples</span>
+      </h3>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+            <span class='code-description'>
+              Sample Usage
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">.button--plus-minus {
+  @include plus-minus-button($color-primary);
+
+  &amp;--is-active {
+    @include plus-minus-button-active($color-primary);
+  }
+}</code></pre>
+    </div>
+  
+
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            css
+          </span>
+
+          
+            <span class='code-description'>
+              compiled
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-css">.button--plus-minus {
+  background-color: transparent;
+  padding: 10px;
+  position: relative;
+}
+
+.button--plus-minus:after, .button--plus-minus:before {
+  background-color: #2f80e8;
+  bottom: 0;
+  content: &#39;&#39;;
+  display: block;
+  height: 3px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+  width: 20px;
+}
+
+.button--plus-minus:after {
+  transform: rotate(90deg);
+}
+
+.button--plus-minus:focus, .button--plus-minus:hover {
+  background-color: transparent;
+}
+
+.button--plus-minus:focus:after, .button--plus-minus:focus:before, .button--plus-minus:hover:after, .button--plus-minus:hover:before {
+  color: #2f80e8;
+}
+
+.button--plus-minus:active {
+  background-color: transparent;
+}
+
+.button--plus-minus:active:after, .button--plus-minus:active:before {
+  color: #2f80e8;
+}
+
+.button--plus-minus--is-active {
+  background-color: transparent;
+}
+
+.button--plus-minus--is-active:after, .button--plus-minus--is-active:before {
+  background-color: #2f80e8;
+}
+
+.button--plus-minus--is-active:after {
+  transform: rotate(180deg);
+}
+</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+  </div>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            html
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-html">&lt;button type=&quot;button&quot; class=&quot;button button--plus-minus button--plus-minus--is-active&quot;&gt;
+  &lt;span class=&quot;screen-reader-text&gt;Expand&lt;/span&gt; &lt;!-- assumes a .screen-reader-text class using @include screen-reader exists. --&gt;
+&lt;/button&gt;</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+      <div class="example-render">
+        <iframe class="render-example" srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;base target=&quot;_parent&quot;&gt;
+
+  &lt;title&gt;example&lt;/title&gt;
+
+  
+
+  
+    &lt;!-- Custom CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/custom/sassdoc.css&quot; /&gt;
+  
+&lt;/head&gt;
+&lt;body class=&quot;sassdoc&quot;&gt;
+  
+  &lt;button type=&quot;button&quot; class=&quot;button button--plus-minus button--plus-minus--is-active&quot;&gt;
+  &lt;span class=&quot;screen-reader-text&gt;Expand&lt;/span&gt; &lt;!-- assumes a .screen-reader-text class using @include screen-reader exists. --&gt;
+&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+" width="100%" height="0"></iframe>
+      </div>
+    
+  </div>
+
+      
+    </div>
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+    
+  <div data-item-section="used-by">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Used By</span>
+        
+      </h3>
+    
+
+    
+      
+      
+        
+
+        
+          
+          
+  
+  
+  
+  
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      <span class="item-type">@mixin</span>
+      
+        <a href="
+  03-buttons.html#mixin--plus-minus-button" class="item-name">plus-minus-button()</a>
+      
+      
+      
+      
+    </h4>
+
+    
+  </div>
+
+
+        
+      
+    
+  </div>
+
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+
+</section>
+
+  
+
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="assets/webpack/runtime.min.js"></script>
+  <script type="text/javascript" src="assets/webpack/common.min.js"></script>
+  <script type="text/javascript" src="assets/webpack/app.min.js"></script>
+  
+</body>
+</html>

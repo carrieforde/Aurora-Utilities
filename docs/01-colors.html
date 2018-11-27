@@ -1,0 +1,2925 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <title>Colors | aurora-utilities Documentation</title>
+
+  <link href="assets/img/favicon.ico" rel="shortcut icon">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600|Source+Sans+Pro:400,400i,700,700i" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/webpack/app_styles.min.css" />
+
+  
+
+  
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" hidden>
+  <symbol id="icon-logo" viewBox="0 0 16 16">
+    <path d="M.2 8L0 7.8v-.2C.8 6.9 1.9 5.9 2.7 5l.4.3c-.5.8-1.1 1.6-1.8 2.3 1 1.2 1 1.3 1.7 2.4l-.4.3c-.4-.4-.5-.6-1-1C1 8.6 1.1 8.7.2 8zM13 10c.6-1.1.7-1.1 1.7-2.4-.6-.6-1.3-1.5-1.7-2.3l.3-.3c.8.8 1.8 1.8 2.7 2.6v.2l-.8.7c-.3.3-1.2 1.1-1.8 1.7L13 10z"/><path d="M2.6 13.1H3c.9 0 1.1-.2 1.1-1.4V4.2c0-1.1-.2-1.4-1.1-1.4h-.4v-.6h4.5v.7h-.3c-.9 0-1.1.2-1.1 1.4v3.2h4.6V4.2c0-1.1-.2-1.4-1.1-1.4h-.3v-.6h4.5v.7H13c-.9 0-1.1.2-1.1 1.4v7.5c0 1.1.2 1.4 1.1 1.4h.4v.7H8.9v-.7h.3c.9 0 1.1-.2 1.1-1.4V8.2H5.7v3.5c0 1.1.2 1.4 1.1 1.4h.3v.7H2.6v-.7z"/>
+  </symbol>
+  <symbol id="icon-menu" viewBox="0 0 24 28">
+    <path d="M24 21v2c0 .547-.453 1-1 1H1c-.547 0-1-.453-1-1v-2c0-.547.453-1 1-1h22c.547 0 1 .453 1 1zm0-8v2c0 .547-.453 1-1 1H1c-.547 0-1-.453-1-1v-2c0-.547.453-1 1-1h22c.547 0 1 .453 1 1zm0-8v2c0 .547-.453 1-1 1H1c-.547 0-1-.453-1-1V5c0-.547.453-1 1-1h22c.547 0 1 .453 1 1z"/>
+  </symbol>
+</svg>
+
+  <div data-region="app">
+    <header data-region="banner">
+      
+  <button data-nav-toggle data-toggle="button" aria-controls="nav" aria-pressed="false" type="button" data-toggle-synced="false">
+    
+  <svg data-icon="menu" data-icon-size="nav-icon" ><title>menu</title><use xlink:href="#icon-menu" />
+  </svg>
+
+  </button>
+
+
+      <div class="project-title">
+        <a href="index.html" rel="home" class="project-name">aurora-utilities</a>
+        
+          <span class="project-version">1.1.0</span>
+        
+      </div>
+    </header>
+
+    <div data-region="container">
+      
+  <nav data-region="nav" data-toggle="target" id="nav" data-target-id="nav" aria-expanded="false" data-auto-closing="false" data-auto-closing-on-any-click="false">
+    <form action="search.html">
+      <input type="text" name="q" placeholder="Search…" required minlength="3">
+    </form>
+
+    <div class="nav-subsection">
+      <h3 class="nav-home">
+        
+        <a href="index.html" data-nav="is-not-active">aurora-utilities</a>
+      </h3>
+
+      
+      
+    </div>
+
+    
+    <div class="nav-subsection">
+      <ul>
+            <li class="nav-subsection">
+              <h3 class="nav-title">Variables</h3>
+              <ul>
+                
+  
+    <li class="nav-item">
+      <a href="01-breakpoints.html" data-nav="is-not-active">Breakpoints</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="01-colors.html" data-nav="is-active">Colors</a>
+    </li>
+  
+  
+  
+    <li class="nav-item">
+      <a href="01-typography.html" data-nav="is-not-active">Typography</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="01-widths.html" data-nav="is-not-active">Widths</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="01-z-index.html" data-nav="is-not-active">Z Indeces</a>
+    </li>
+  </ul>
+            </li>
+            <li class="nav-subsection">
+              <h3 class="nav-title">Functions</h3>
+              <ul>
+                
+  
+    <li class="nav-item">
+      <a href="02-breakpoint.html" data-nav="is-not-active">Breakpoint</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="02-color.html" data-nav="is-not-active">Color</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="02-size.html" data-nav="is-not-active">Size</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="02-z-index.html" data-nav="is-not-active">Z Index</a>
+    </li>
+  </ul>
+            </li>
+            <li class="nav-subsection">
+              <h3 class="nav-title">Mixins</h3>
+              <ul>
+                
+  
+    <li class="nav-item">
+      <a href="03-colors.html" data-nav="is-not-active">Colors</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="03-buttons.html" data-nav="is-not-active">Buttons</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="03-links.html" data-nav="is-not-active">Links</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="03-media-queries.html" data-nav="is-not-active">Media Queries</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="03-utilities.html" data-nav="is-not-active">Utilities</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="03-positioning.html" data-nav="is-not-active">Positioning</a>
+    </li>
+  </ul>
+            </li></ul>
+    </div>
+
+    
+    
+
+    
+      <aside class="footer-credit">
+        <a href="http://oddbird.net/herman/" class="footer-icon">
+          
+  <svg data-icon="logo" data-icon-size="footer-logo" ><use xlink:href="#icon-logo" />
+  </svg>
+
+        </a>
+        <span>
+          Documented with
+          <a href="http://oddbird.net/herman/" class="footer-link">
+            Herman
+          </a>
+        </span>
+        <span>
+          by
+          <a href="http://oddbird.net/" class="footer-link">
+            OddBird
+          </a>
+        </span>
+      </aside>
+    
+  </nav>
+
+
+      <main data-region="main">
+        
+  <nav class="breadcrumb">
+    
+    <a href="index.html" >aurora-utilities</a> »
+    <strong>Colors</strong>
+  </nav>
+
+
+        <div data-page="01-colors">
+          
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="variable--primary-colors">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type"></span>
+      
+
+      
+        <a href="#variable--primary-colors" class="item-name">$primary-colors</a>
+      
+
+      
+        <span class="value-type">(Map)</span>
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+    
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">$primary-colors: (
+  900: #082449,
+  800: #0c356b,
+  700: #104993,
+  600: #1560c1,
+  500: #2f80e8,
+  400: #75abef,
+  300: #b6d1f7,
+  200: #dfebfb,
+  100: #f6f9fe
+);</code></pre>
+    </div>
+  
+
+    
+  
+  
+  
+  
+
+  
+    <div class="text-block">
+      <p>Primary colors</p>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+
+  
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+        
+  
+  <div data-item-section="color-palette">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Color Previews</span>
+        
+      </h3>
+    
+
+    
+    <div class="color-palette">
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #f6f9fe;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">100</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#f6f9fe</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #dfebfb;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">200</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#dfebfb</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #b6d1f7;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">300</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#b6d1f7</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #75abef;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">400</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#75abef</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #2f80e8;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">500</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#2f80e8</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #1560c1;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">600</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#1560c1</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #104993;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">700</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#104993</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #0c356b;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">800</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#0c356b</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #082449;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">900</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#082449</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+    </div>
+  
+  </div>
+
+
+      
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="variable--accent-colors">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type"></span>
+      
+
+      
+        <a href="#variable--accent-colors" class="item-name">$accent-colors</a>
+      
+
+      
+        <span class="value-type">(Map)</span>
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+    
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">$accent-colors: (
+  900: #492c08,
+  800: #6a410c,
+  700: #935a10,
+  600: #c17716,
+  500: #e8982f,
+  400: #f0ba75,
+  300: #f7d9b6,
+  200: #fbefdf,
+  100: #fefdfa
+);</code></pre>
+    </div>
+  
+
+    
+  
+  
+  
+  
+
+  
+    <div class="text-block">
+      <p>Accent colors</p>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+
+  
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+        
+  
+  <div data-item-section="color-palette">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Color Previews</span>
+        
+      </h3>
+    
+
+    
+    <div class="color-palette">
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #fefdfa;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">100</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#fefdfa</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #fbefdf;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">200</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#fbefdf</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #f7d9b6;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">300</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#f7d9b6</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #f0ba75;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">400</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#f0ba75</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #e8982f;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">500</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#e8982f</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #c17716;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">600</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#c17716</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #935a10;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">700</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#935a10</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #6a410c;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">800</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#6a410c</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #492c08;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">900</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#492c08</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+    </div>
+  
+  </div>
+
+
+      
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="variable--neutral-colors">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type"></span>
+      
+
+      
+        <a href="#variable--neutral-colors" class="item-name">$neutral-colors</a>
+      
+
+      
+        <span class="value-type">(Map)</span>
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+    
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">$neutral-colors: (
+  900: #27292b,
+  800: #383a3e,
+  700: #4e5156,
+  600: #666a70,
+  500: #868b92,
+  400: #b4b7bb,
+  300: #dadbdd,
+  200: #f2f2f3,
+  100: #fafafa
+);</code></pre>
+    </div>
+  
+
+    
+  
+  
+  
+  
+
+  
+    <div class="text-block">
+      <p>Neutral colors</p>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+
+  
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+        
+  
+  <div data-item-section="color-palette">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Color Previews</span>
+        
+      </h3>
+    
+
+    
+    <div class="color-palette">
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #fafafa;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">100</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#fafafa</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #f2f2f3;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">200</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#f2f2f3</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #dadbdd;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">300</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#dadbdd</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #b4b7bb;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">400</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#b4b7bb</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #868b92;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">500</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#868b92</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #666a70;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">600</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#666a70</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #4e5156;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">700</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#4e5156</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #383a3e;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">800</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#383a3e</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #27292b;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">900</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#27292b</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+    </div>
+  
+  </div>
+
+
+      
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="variable--success-colors">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type"></span>
+      
+
+      
+        <a href="#variable--success-colors" class="item-name">$success-colors</a>
+      
+
+      
+        <span class="value-type">(Map)</span>
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+    
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">$success-colors: (
+  900: #063709,
+  800: #0b5c10,
+  700: #0f8a15,
+  600: #15c11e,
+  500: #30e83a,
+  400: #75f07c,
+  300: #b6f7b9,
+  200: #e2fce5,
+  100: #f6fef6
+);</code></pre>
+    </div>
+  
+
+    
+  
+  
+  
+  
+
+  
+    <div class="text-block">
+      <p>Success colors</p>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+
+  
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+        
+  
+  <div data-item-section="color-palette">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Color Previews</span>
+        
+      </h3>
+    
+
+    
+    <div class="color-palette">
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #f6fef6;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">100</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#f6fef6</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #e2fce5;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">200</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#e2fce5</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #b6f7b9;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">300</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#b6f7b9</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #75f07c;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">400</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#75f07c</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #30e83a;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">500</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#30e83a</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #15c11e;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">600</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#15c11e</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #0f8a15;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">700</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#0f8a15</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #0b5c10;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">800</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#0b5c10</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #063709;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">900</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#063709</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+    </div>
+  
+  </div>
+
+
+      
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="variable--warning-colors">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type"></span>
+      
+
+      
+        <a href="#variable--warning-colors" class="item-name">$warning-colors</a>
+      
+
+      
+        <span class="value-type">(Map)</span>
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+    
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">$warning-colors: (
+  900: #404007,
+  800: #60600c,
+  700: #939311,
+  600: #c1c016,
+  500: #e8e830,
+  400: #f2f28c,
+  300: #f7f7ba,
+  200: #fbfbdf,
+  100: #fefef6
+);</code></pre>
+    </div>
+  
+
+    
+  
+  
+  
+  
+
+  
+    <div class="text-block">
+      <p>Warning colors</p>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+
+  
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+        
+  
+  <div data-item-section="color-palette">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Color Previews</span>
+        
+      </h3>
+    
+
+    
+    <div class="color-palette">
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #fefef6;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">100</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#fefef6</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #fbfbdf;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">200</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#fbfbdf</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #f7f7ba;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">300</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#f7f7ba</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #f2f28c;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">400</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#f2f28c</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #e8e830;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">500</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#e8e830</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #c1c016;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">600</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#c1c016</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #939311;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">700</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#939311</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #60600c;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">800</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#60600c</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #404007;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">900</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#404007</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+    </div>
+  
+  </div>
+
+
+      
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="variable--danger-colors">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type"></span>
+      
+
+      
+        <a href="#variable--danger-colors" class="item-name">$danger-colors</a>
+      
+
+      
+        <span class="value-type">(Map)</span>
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+    
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">$danger-colors: (
+  900: #490808,
+  800: #6a0c0c,
+  700: #931010,
+  600: #c11514,
+  500: #e82f30,
+  400: #ef6c6c,
+  300: #f4999a,
+  200: #fbdada,
+  100: #fefafa
+);</code></pre>
+    </div>
+  
+
+    
+  
+  
+  
+  
+
+  
+    <div class="text-block">
+      <p>Danger colors</p>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+
+  
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+        
+  
+  <div data-item-section="color-palette">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Color Previews</span>
+        
+      </h3>
+    
+
+    
+    <div class="color-palette">
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #fefafa;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">100</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#fefafa</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #fbdada;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">200</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#fbdada</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #f4999a;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">300</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#f4999a</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #ef6c6c;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">400</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#ef6c6c</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #e82f30;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">500</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#e82f30</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #c11514;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">600</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#c11514</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #931010;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">700</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#931010</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #6a0c0c;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">800</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#6a0c0c</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #490808;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">900</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#490808</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+    </div>
+  
+  </div>
+
+
+      
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="variable--editor-palette">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type"></span>
+      
+
+      
+        <a href="#variable--editor-palette" class="item-name">$editor-palette</a>
+      
+
+      
+        <span class="value-type">(Map)</span>
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+    
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">$editor-palette: (
+  primary: $color-primary,
+  accent: $color-accent,
+  success: $color-success,
+  warning: $color-warning,
+  danger: $color-danger,
+  gray-mid: $color-gray-mid,
+  gray-light: $color-gray-light,
+  gray-dark: $color-gray-dark
+);</code></pre>
+    </div>
+  
+
+    
+  
+  
+  
+  
+
+  
+    <div class="text-block">
+      <p>Editor palette</p>
+<p>The colors available within the WordPress<span class="widont">&nbsp;</span>editor.</p>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+
+  
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+        
+  
+  <div data-item-section="color-palette">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Color Previews</span>
+        
+      </h3>
+    
+
+    
+    <div class="color-palette">
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #2f80e8;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">primary</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#2f80e8</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #e8982f;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">accent</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#e8982f</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #15c11e;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">success</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#15c11e</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #e8e830;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">warning</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#e8e830</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #e82f30;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">danger</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#e82f30</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #868b92;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">gray-mid</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#868b92</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #fafafa;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">gray-light</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#fafafa</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #27292b;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">gray-dark</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#27292b</code>
+                
+              
+                
+              
+                
+              
+            
+          </div>
+        </div>
+      
+    </div>
+  
+  </div>
+
+
+      
+
+</section>
+
+  
+
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="assets/webpack/runtime.min.js"></script>
+  <script type="text/javascript" src="assets/webpack/common.min.js"></script>
+  <script type="text/javascript" src="assets/webpack/app.min.js"></script>
+  
+</body>
+</html>

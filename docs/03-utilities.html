@@ -1,0 +1,2967 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <title>Utilities | aurora-utilities Documentation</title>
+
+  <link href="assets/img/favicon.ico" rel="shortcut icon">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600|Source+Sans+Pro:400,400i,700,700i" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/webpack/app_styles.min.css" />
+
+  
+
+  
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" hidden>
+  <symbol id="icon-logo" viewBox="0 0 16 16">
+    <path d="M.2 8L0 7.8v-.2C.8 6.9 1.9 5.9 2.7 5l.4.3c-.5.8-1.1 1.6-1.8 2.3 1 1.2 1 1.3 1.7 2.4l-.4.3c-.4-.4-.5-.6-1-1C1 8.6 1.1 8.7.2 8zM13 10c.6-1.1.7-1.1 1.7-2.4-.6-.6-1.3-1.5-1.7-2.3l.3-.3c.8.8 1.8 1.8 2.7 2.6v.2l-.8.7c-.3.3-1.2 1.1-1.8 1.7L13 10z"/><path d="M2.6 13.1H3c.9 0 1.1-.2 1.1-1.4V4.2c0-1.1-.2-1.4-1.1-1.4h-.4v-.6h4.5v.7h-.3c-.9 0-1.1.2-1.1 1.4v3.2h4.6V4.2c0-1.1-.2-1.4-1.1-1.4h-.3v-.6h4.5v.7H13c-.9 0-1.1.2-1.1 1.4v7.5c0 1.1.2 1.4 1.1 1.4h.4v.7H8.9v-.7h.3c.9 0 1.1-.2 1.1-1.4V8.2H5.7v3.5c0 1.1.2 1.4 1.1 1.4h.3v.7H2.6v-.7z"/>
+  </symbol>
+  <symbol id="icon-menu" viewBox="0 0 24 28">
+    <path d="M24 21v2c0 .547-.453 1-1 1H1c-.547 0-1-.453-1-1v-2c0-.547.453-1 1-1h22c.547 0 1 .453 1 1zm0-8v2c0 .547-.453 1-1 1H1c-.547 0-1-.453-1-1v-2c0-.547.453-1 1-1h22c.547 0 1 .453 1 1zm0-8v2c0 .547-.453 1-1 1H1c-.547 0-1-.453-1-1V5c0-.547.453-1 1-1h22c.547 0 1 .453 1 1z"/>
+  </symbol>
+</svg>
+
+  <div data-region="app">
+    <header data-region="banner">
+      
+  <button data-nav-toggle data-toggle="button" aria-controls="nav" aria-pressed="false" type="button" data-toggle-synced="false">
+    
+  <svg data-icon="menu" data-icon-size="nav-icon" ><title>menu</title><use xlink:href="#icon-menu" />
+  </svg>
+
+  </button>
+
+
+      <div class="project-title">
+        <a href="index.html" rel="home" class="project-name">aurora-utilities</a>
+        
+          <span class="project-version">1.1.0</span>
+        
+      </div>
+    </header>
+
+    <div data-region="container">
+      
+  <nav data-region="nav" data-toggle="target" id="nav" data-target-id="nav" aria-expanded="false" data-auto-closing="false" data-auto-closing-on-any-click="false">
+    <form action="search.html">
+      <input type="text" name="q" placeholder="Search…" required minlength="3">
+    </form>
+
+    <div class="nav-subsection">
+      <h3 class="nav-home">
+        
+        <a href="index.html" data-nav="is-not-active">aurora-utilities</a>
+      </h3>
+
+      
+      
+    </div>
+
+    
+    <div class="nav-subsection">
+      <ul>
+            <li class="nav-subsection">
+              <h3 class="nav-title">Variables</h3>
+              <ul>
+                
+  
+    <li class="nav-item">
+      <a href="01-breakpoints.html" data-nav="is-not-active">Breakpoints</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="01-colors.html" data-nav="is-not-active">Colors</a>
+    </li>
+  
+  
+  
+    <li class="nav-item">
+      <a href="01-typography.html" data-nav="is-not-active">Typography</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="01-widths.html" data-nav="is-not-active">Widths</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="01-z-index.html" data-nav="is-not-active">Z Indeces</a>
+    </li>
+  </ul>
+            </li>
+            <li class="nav-subsection">
+              <h3 class="nav-title">Functions</h3>
+              <ul>
+                
+  
+    <li class="nav-item">
+      <a href="02-breakpoint.html" data-nav="is-not-active">Breakpoint</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="02-color.html" data-nav="is-not-active">Color</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="02-size.html" data-nav="is-not-active">Size</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="02-z-index.html" data-nav="is-not-active">Z Index</a>
+    </li>
+  </ul>
+            </li>
+            <li class="nav-subsection">
+              <h3 class="nav-title">Mixins</h3>
+              <ul>
+                
+  
+    <li class="nav-item">
+      <a href="03-colors.html" data-nav="is-not-active">Colors</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="03-buttons.html" data-nav="is-not-active">Buttons</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="03-links.html" data-nav="is-not-active">Links</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="03-media-queries.html" data-nav="is-not-active">Media Queries</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="03-utilities.html" data-nav="is-active">Utilities</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="03-positioning.html" data-nav="is-not-active">Positioning</a>
+    </li>
+  </ul>
+            </li></ul>
+    </div>
+
+    
+    
+
+    
+      <aside class="footer-credit">
+        <a href="http://oddbird.net/herman/" class="footer-icon">
+          
+  <svg data-icon="logo" data-icon-size="footer-logo" ><use xlink:href="#icon-logo" />
+  </svg>
+
+        </a>
+        <span>
+          Documented with
+          <a href="http://oddbird.net/herman/" class="footer-link">
+            Herman
+          </a>
+        </span>
+        <span>
+          by
+          <a href="http://oddbird.net/" class="footer-link">
+            OddBird
+          </a>
+        </span>
+      </aside>
+    
+  </nav>
+
+
+      <main data-region="main">
+        
+  <nav class="breadcrumb">
+    
+    <a href="index.html" >aurora-utilities</a> »
+    <strong>Utilities</strong>
+  </nav>
+
+
+        <div data-page="03-utilities">
+          
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="mixin--clearfix">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type">@mixin</span>
+      
+
+      
+        <a href="#mixin--clearfix" class="item-name">clearfix()</a>
+      
+
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+  
+  
+  
+  
+
+  
+    <div class="text-block">
+      <p>Always clear floats.</p>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+
+  
+  
+    
+
+    <div data-item-section="examples">
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Examples</span>
+      </h3>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+            <span class='code-description'>
+              Usage
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">.clearfix {
+  @include clearfix;
+}</code></pre>
+    </div>
+  
+
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            css
+          </span>
+
+          
+            <span class='code-description'>
+              compiled
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-css">.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:after, .clearfix:before {
+  content: &#39; &#39;;
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+  </div>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            html
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-html">&lt;div class=&quot;clearfix&quot;&gt;
+  &lt;div style=&quot;float:left; height: 200px; width: 300px;&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+      <div class="example-render">
+        <iframe class="render-example" srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;base target=&quot;_parent&quot;&gt;
+
+  &lt;title&gt;example&lt;/title&gt;
+
+  
+
+  
+    &lt;!-- Custom CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/custom/sassdoc.css&quot; /&gt;
+  
+&lt;/head&gt;
+&lt;body class=&quot;sassdoc&quot;&gt;
+  
+  &lt;div class=&quot;clearfix&quot;&gt;
+  &lt;div style=&quot;float:left; height: 200px; width: 300px;&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+" width="100%" height="0"></iframe>
+      </div>
+    
+  </div>
+
+      
+    </div>
+  
+
+
+  
+
+    
+  <div data-item-section="related">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Related</span>
+        
+      </h3>
+    
+
+    
+      
+        
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <a href="http://nicolasgallagher.com/micro-clearfix-hack/" class="item-name">http://nicolasgallagher.com/micro-clearfix-hack/</a>
+      
+      
+      
+      <span class="item-note">[external]</span>
+    </h4>
+
+    
+  </div>
+
+
+      
+
+      
+    
+  </div>
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="mixin--list-reset">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type">@mixin</span>
+      
+
+      
+        <a href="#mixin--list-reset" class="item-name">list-reset()</a>
+      
+
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+  
+  
+  
+  
+
+  
+    <div class="text-block">
+      <p>Removes list delimiters, margin, and padding from <code>ul</code> or <code>ol</code> elements.</p>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+
+  
+  
+    
+
+    <div data-item-section="examples">
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Examples</span>
+      </h3>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+            <span class='code-description'>
+              Usage
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">.list-reset {
+  @include list-reset;
+}</code></pre>
+    </div>
+  
+
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            css
+          </span>
+
+          
+            <span class='code-description'>
+              compiled
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-css">.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+  </div>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            html
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-html">&lt;ul class=&quot;list-reset&quot;&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
+  &lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
+  &lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
+  &lt;li&gt;Nunc dignissim risus id metus.&lt;/li&gt;
+  &lt;li&gt;Cras ornare tristique elit.&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+      <div class="example-render">
+        <iframe class="render-example" srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;base target=&quot;_parent&quot;&gt;
+
+  &lt;title&gt;example&lt;/title&gt;
+
+  
+
+  
+    &lt;!-- Custom CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/custom/sassdoc.css&quot; /&gt;
+  
+&lt;/head&gt;
+&lt;body class=&quot;sassdoc&quot;&gt;
+  
+  &lt;ul class=&quot;list-reset&quot;&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
+  &lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
+  &lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
+  &lt;li&gt;Nunc dignissim risus id metus.&lt;/li&gt;
+  &lt;li&gt;Cras ornare tristique elit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+" width="100%" height="0"></iframe>
+      </div>
+    
+  </div>
+
+      
+    </div>
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="mixin--full-width">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type">@mixin</span>
+      
+
+      
+        <a href="#mixin--full-width" class="item-name">full-width()</a>
+      
+
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+  
+  
+  
+  
+
+  
+    <div class="text-block">
+      <p>Extend an element to the edge of the viewport when the parent has a fixed<span class="widont">&nbsp;</span>width.</p>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+
+  
+  
+    
+
+    <div data-item-section="examples">
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Examples</span>
+      </h3>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+            <span class='code-description'>
+              Usage
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">.full-width {
+  @include full-width;
+}</code></pre>
+    </div>
+  
+
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            css
+          </span>
+
+          
+            <span class='code-description'>
+              compiled
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-css">.full-width {
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
+}
+</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+  </div>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            html
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-html">&lt;div class=&quot;full-width-parent&quot;&gt;
+  &lt;div class=&quot;full-width&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+      <div class="example-render">
+        <iframe class="render-example" srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;base target=&quot;_parent&quot;&gt;
+
+  &lt;title&gt;example&lt;/title&gt;
+
+  
+
+  
+    &lt;!-- Custom CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/custom/sassdoc.css&quot; /&gt;
+  
+&lt;/head&gt;
+&lt;body class=&quot;sassdoc&quot;&gt;
+  
+  &lt;div class=&quot;full-width-parent&quot;&gt;
+  &lt;div class=&quot;full-width&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+" width="100%" height="0"></iframe>
+      </div>
+    
+  </div>
+
+      
+    </div>
+  
+
+
+  
+
+    
+  <div data-item-section="related">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Related</span>
+        
+      </h3>
+    
+
+    
+      
+        
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <a href="https://css-tricks.com/full-width-containers-limited-width-parents/" class="item-name">https://css-tricks.com/full-width-containers-limited-width-parents/</a>
+      
+      
+      
+      <span class="item-note">[external]</span>
+    </h4>
+
+    
+  </div>
+
+
+      
+
+      
+    
+  </div>
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="mixin--screen-reader-text">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type">@mixin</span>
+      
+
+      
+        <a href="#mixin--screen-reader-text" class="item-name">screen-reader-text()</a>
+      
+
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+  
+  
+  
+  
+
+  
+    <div class="text-block">
+      <p>Visually hides text, but text is still available for screen readers. Text is not<span class="widont">&nbsp;</span>focusable.</p>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+
+  
+  
+    
+
+    <div data-item-section="examples">
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Examples</span>
+      </h3>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+            <span class='code-description'>
+              Usage
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">.screen-reader-text {
+  @include screen-reader-text;
+}</code></pre>
+    </div>
+  
+
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            css
+          </span>
+
+          
+            <span class='code-description'>
+              compiled
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-css">.screen-reader-text {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+  </div>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            html
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-html">&lt;button type=&quot;button&quot; class=&quot;button button--close&quot;&gt;
+  &lt;span class=&quot;screen-reader-text&quot;&gt;Close&lt;/span&gt;
+&lt;/button&gt;</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+      <div class="example-render">
+        <iframe class="render-example" srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;base target=&quot;_parent&quot;&gt;
+
+  &lt;title&gt;example&lt;/title&gt;
+
+  
+
+  
+    &lt;!-- Custom CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/custom/sassdoc.css&quot; /&gt;
+  
+&lt;/head&gt;
+&lt;body class=&quot;sassdoc&quot;&gt;
+  
+  &lt;button type=&quot;button&quot; class=&quot;button button--close&quot;&gt; &lt;span class=&quot;screen-reader-text&quot;&gt;Close&lt;/span&gt;
+
+&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+" width="100%" height="0"></iframe>
+      </div>
+    
+  </div>
+
+      
+    </div>
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="mixin--screen-reader-text-focusable">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type">@mixin</span>
+      
+
+      
+        <a href="#mixin--screen-reader-text-focusable" class="item-name">screen-reader-text-focusable()</a>
+      
+
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+  
+  
+  
+  
+
+  
+    <div class="text-block">
+      <p>Visually hides text, but it’s still available for screen readers, and is still<span class="widont">&nbsp;</span>focusable.</p>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+
+  
+  
+    
+
+    <div data-item-section="examples">
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Examples</span>
+      </h3>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+            <span class='code-description'>
+              Usage
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">.screen-reader-text {
+  @include screen-reader-text-focusable;
+}</code></pre>
+    </div>
+  
+
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            css
+          </span>
+
+          
+            <span class='code-description'>
+              compiled
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-css">.screen-reader-text:focus {
+  border: auto;
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+  </div>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            html
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-html">&lt;button type=&quot;button&quot; class=&quot;button screen-reader-text screen-reader-focusable&quot;&gt;Close&lt;/button&gt;</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+      <div class="example-render">
+        <iframe class="render-example" srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;base target=&quot;_parent&quot;&gt;
+
+  &lt;title&gt;example&lt;/title&gt;
+
+  
+
+  
+    &lt;!-- Custom CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/custom/sassdoc.css&quot; /&gt;
+  
+&lt;/head&gt;
+&lt;body class=&quot;sassdoc&quot;&gt;
+  
+  &lt;button type=&quot;button&quot; class=&quot;button screen-reader-text screen-reader-focusable&quot;&gt;Close&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+" width="100%" height="0"></iframe>
+      </div>
+    
+  </div>
+
+      
+    </div>
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="mixin--image-as-background">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type">@mixin</span>
+      
+
+      
+        <a href="#mixin--image-as-background" class="item-name">image-as-background()</a>
+      
+
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+  
+  
+  
+  
+
+  
+    <div class="text-block">
+      <p>Centers a background image, and makes sure it covers its<span class="widont">&nbsp;</span>container.</p>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+
+  
+  
+    
+
+    <div data-item-section="examples">
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Examples</span>
+      </h3>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+            <span class='code-description'>
+              Usage
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">.image-as-background {
+  @include image-as-background
+}</code></pre>
+    </div>
+  
+
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            css
+          </span>
+
+          
+            <span class='code-description'>
+              compiled
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-css">.image-as-background {
+  background-position: center;
+  background-size: cover;
+}
+</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+  </div>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            html
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-html">&lt;div class=&quot;image-as-background&quot; style=&quot;background-image: url(https://picsum.photos/1125/750/?image=1022);&quot;&gt;&lt;/div&gt;</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+      <div class="example-render">
+        <iframe class="render-example" srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;base target=&quot;_parent&quot;&gt;
+
+  &lt;title&gt;example&lt;/title&gt;
+
+  
+
+  
+    &lt;!-- Custom CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/custom/sassdoc.css&quot; /&gt;
+  
+&lt;/head&gt;
+&lt;body class=&quot;sassdoc&quot;&gt;
+  
+  &lt;div class=&quot;image-as-background&quot; style=&quot;background-image: url(https://picsum.photos/1125/750/?image=1022);&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+" width="100%" height="0"></iframe>
+      </div>
+    
+  </div>
+
+      
+    </div>
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="mixin--size">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type">@mixin</span>
+      
+
+      
+        <a href="#mixin--size" class="item-name">size()</a>
+      
+
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+  
+  
+  
+  
+
+  
+    <div class="text-block">
+      <p>Declare the element <code>height</code> and <code>width</code>.</p>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    
+  <div data-item-section="parameter">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Parameters</span>
+        
+      </h3>
+    
+
+    
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$width:</span>
+      
+      
+      <span class="value-type">(Number)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The element width.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$height:</span>
+      
+      <span class="item-value">$width</span>
+      <span class="value-type">(Number)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The element height.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+
+      
+  
+
+      
+  
+
+      
+  
+
+      
+  
+
+    
+  </div>
+
+  
+
+
+  
+  
+    
+
+    <div data-item-section="examples">
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Examples</span>
+      </h3>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+            <span class='code-description'>
+              Usage
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">.size {
+  @include size(rem(150), rem(50));
+}</code></pre>
+    </div>
+  
+
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            css
+          </span>
+
+          
+            <span class='code-description'>
+              compiled
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-css">.size {
+  height: 3.125rem;
+  width: 9.375rem;
+}
+</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+  </div>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            html
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-html">&lt;div class=&quot;size&quot;&gt;&lt;/div&gt;</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+      <div class="example-render">
+        <iframe class="render-example" srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;base target=&quot;_parent&quot;&gt;
+
+  &lt;title&gt;example&lt;/title&gt;
+
+  
+
+  
+    &lt;!-- Custom CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/custom/sassdoc.css&quot; /&gt;
+  
+&lt;/head&gt;
+&lt;body class=&quot;sassdoc&quot;&gt;
+  
+  &lt;div class=&quot;size&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+" width="100%" height="0"></iframe>
+      </div>
+    
+  </div>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+            <span class='code-description'>
+              Usage
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">.size--one-parameter {
+  @include size(50px);
+}</code></pre>
+    </div>
+  
+
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            css
+          </span>
+
+          
+            <span class='code-description'>
+              compiled
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-css">.size--one-parameter {
+  height: 50px;
+  width: 50px;
+}
+</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+  </div>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            html
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-html">&lt;div class=&quot;size size--one-parameter&quot;&gt;&lt;/div&gt;</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+      <div class="example-render">
+        <iframe class="render-example" srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;base target=&quot;_parent&quot;&gt;
+
+  &lt;title&gt;example&lt;/title&gt;
+
+  
+
+  
+    &lt;!-- Custom CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/custom/sassdoc.css&quot; /&gt;
+  
+&lt;/head&gt;
+&lt;body class=&quot;sassdoc&quot;&gt;
+  
+  &lt;div class=&quot;size size--one-parameter&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+" width="100%" height="0"></iframe>
+      </div>
+    
+  </div>
+
+      
+    </div>
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+    
+  <div data-item-section="used-by">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Used By</span>
+        
+      </h3>
+    
+
+    
+      
+      
+        
+
+        
+          
+          
+  
+  
+  
+  
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      <span class="item-type">@mixin</span>
+      
+        <a href="
+  03-utilities.html#mixin--aspect-ratio" class="item-name">aspect-ratio()</a>
+      
+      
+      
+      
+    </h4>
+
+    
+  </div>
+
+
+        
+      
+    
+  </div>
+
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="mixin--aspect-ratio">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type">@mixin</span>
+      
+
+      
+        <a href="#mixin--aspect-ratio" class="item-name">aspect-ratio()</a>
+      
+
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+  
+  
+  
+  
+
+  
+    <div class="text-block">
+      <p>Set an aspect ratio on an<span class="widont">&nbsp;</span>element.</p>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    
+  <div data-item-section="parameter">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Parameters</span>
+        
+      </h3>
+    
+
+    
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$width:</span>
+      
+      
+      <span class="value-type">(Number)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The width ratio, this value should be<span class="widont">&nbsp;</span>unitless.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$height:</span>
+      
+      
+      <span class="value-type">(Number)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The height ratio, this value should be<span class="widont">&nbsp;</span>unitless.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+        
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      
+      
+        <span class="item-name">$el-width:</span>
+      
+      
+      <span class="value-type">(Number)</span>
+      
+    </h4>
+
+    
+      
+      <div class="param-details text-block">
+        <p>The element width.</p>
+
+      </div>
+    
+  </div>
+
+
+      
+
+      
+  
+
+      
+  
+
+      
+  
+
+      
+  
+
+    
+  </div>
+
+  
+
+
+  
+  
+    
+
+    <div data-item-section="examples">
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Examples</span>
+      </h3>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+            <span class='code-description'>
+              Usage for 3:2 ratio
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">.ratio {
+  @include aspect-ratio(3, 2, 50%);
+}</code></pre>
+    </div>
+  
+
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            css
+          </span>
+
+          
+            <span class='code-description'>
+              compiled
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-css">.ratio {
+  height: 0;
+  width: 50%;
+  padding-top: 33.33333%;
+}
+</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+  </div>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            html
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-html">&lt;div class=&quot;ratio&quot;&gt;&lt;/div&gt;</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+      <div class="example-render">
+        <iframe class="render-example" srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;base target=&quot;_parent&quot;&gt;
+
+  &lt;title&gt;example&lt;/title&gt;
+
+  
+
+  
+    &lt;!-- Custom CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/custom/sassdoc.css&quot; /&gt;
+  
+&lt;/head&gt;
+&lt;body class=&quot;sassdoc&quot;&gt;
+  
+  &lt;div class=&quot;ratio&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+" width="100%" height="0"></iframe>
+      </div>
+    
+  </div>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+            <span class='code-description'>
+              Usage for 16:9 ratio
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">.ratio--16-9 {
+  @include aspect-ratio(16, 9, 50%);
+}</code></pre>
+    </div>
+  
+
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            css
+          </span>
+
+          
+            <span class='code-description'>
+              compiled
+            </span>
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-css">.ratio--16-9 {
+  height: 0;
+  width: 50%;
+  padding-top: 28.125%;
+}
+</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+  </div>
+
+      
+        
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="example">
+    <div class="example-code">
+      
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            html
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-html">&lt;div class=&quot;ratio ratio--16-9&quot;&gt;&lt;/div&gt;</code></pre>
+    </div>
+  
+
+    </div>
+
+    
+      <div class="example-render">
+        <iframe class="render-example" srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;base target=&quot;_parent&quot;&gt;
+
+  &lt;title&gt;example&lt;/title&gt;
+
+  
+
+  
+    &lt;!-- Custom CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/custom/sassdoc.css&quot; /&gt;
+  
+&lt;/head&gt;
+&lt;body class=&quot;sassdoc&quot;&gt;
+  
+  &lt;div class=&quot;ratio ratio--16-9&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+" width="100%" height="0"></iframe>
+      </div>
+    
+  </div>
+
+      
+    </div>
+  
+
+
+  
+  
+  
+  
+    
+    
+  <div data-item-section="requires">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Requires</span>
+        
+      </h3>
+    
+
+    
+      
+      
+        
+        
+        
+
+        
+          
+          
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  <div class="param-list">
+    <h4 class="param-title">
+      <span class="item-type">@mixin</span>
+      
+        <a href="
+  03-utilities.html#mixin--size" class="item-name">size()</a>
+      
+      
+      
+      
+    </h4>
+
+    
+  </div>
+
+
+        
+      
+    
+  </div>
+
+  
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+
+</section>
+
+  
+
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="assets/webpack/runtime.min.js"></script>
+  <script type="text/javascript" src="assets/webpack/common.min.js"></script>
+  <script type="text/javascript" src="assets/webpack/app.min.js"></script>
+  
+</body>
+</html>
