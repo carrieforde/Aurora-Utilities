@@ -2,20 +2,37 @@
   "dest": "docs",
   "theme": "herman",
   "groups": {
-    "Settings": {
-      "01-colors": "Colors",
-      "01-typography": "Typography",
-      "01-icons": "Icons",
-      "01-sizes": "Sizes",
+    "Variables": {
       "01-breakpoints": "Breakpoints",
+      "01-colors": "Colors",
+      "01-icons": "Icons",
+      "01-typography": "Typography",
+      "01-widths": "Widths",
       "01-z-index": "Z Indeces"
     },
-    "Tools": {
-      "02-functions": "Functions",
-      "02-mixins": "Mixins"
+    "Functions": {
+      "02-breakpoint": "Breakpoint",
+      "02-color": "Color",
+      "02-size": "Size",
+      "02-z-index": "Z Index"
+    },
+    "Mixins": {
+      "03-colors": "Colors",
+      "03-buttons": "Buttons",
+      "03-links": "Links",
+      "03-media-queries": "Media Queries",
+      "03-utilities": "Utilities",
+      "03-positioning": "Positioning"
     }
   },
   "herman": {
-    "displayColors": ["hex"]
+    "displayColors": ["hex"],
+    "customCSS": "dist/sassdoc.css",
+    "sass": {
+      "jsonfile": "dist/sassdoc.css",
+      "includepaths": ["sass", "node_modules/sassdoc-theme-herman/scss"],
+      "includes": ["aurora-utilities"],
+      "outputstyle": "expanded"
+    }
   }
 }
