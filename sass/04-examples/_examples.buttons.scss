@@ -1,0 +1,44 @@
+.button {
+  @include button($color-primary, $color-white);
+  @include button-size(1rem);
+
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button--outline {
+  @include button-outline(
+    2px solid $color-primary,
+    $color-primary,
+    $color-hover: $color-white,
+    $background-hover: $color-primary
+  );
+}
+
+.button--xl {
+  @include button-size(2.25rem);
+}
+
+.button--pill {
+  @include button-style('pill');
+}
+
+.button--hamburger {
+  @include hamburger-button($color-primary);
+
+  &--is-active {
+    @include hamburger-button-active($color-accent);
+  }
+}
+
+.button--close {
+  @include close-button($color-primary, transparent);
+}
+
+.button--plus-minus {
+  @include plus-minus-button($color-primary);
+
+  &--is-active {
+    @include plus-minus-button-active($color-primary);
+  }
+}

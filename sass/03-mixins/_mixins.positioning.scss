@@ -1,33 +1,20 @@
-// LAYOUT
-
-/// Set the vertical and horizontal alignment of items in a flex container.
-///
-/// @param {String} $align-items     [stretch]    - The vertical alignment.
-/// @param {String} $justify-content [flex-start] - The horizontal alignment.
-@mixin flex-align($align-items: stretch, $justify-content: flex-start) {
-  align-items: $align-items;
-  justify-content: $justify-content;
-}
-
-/// Set the span of a grid item using `grid-column-start` and `grid-column-end`.
-///
-/// @param {String} $grid-col-start - The beginning column for the item.
-/// @param {String} $grid-col-end - The ending column for the item.
-@mixin grid-span($grid-col-start, $grid-col-end) {
-  grid-column-end: $grid-col-end;
-  grid-column-start: $grid-col-start;
-}
-
 /// Vertically centers an item with absolute positioning. Make sure parent is `position: relative`.
+///
+/// @group 03-positioning
 ///
 /// @example scss - Sample Usage
 ///  .box {
 ///    position: relative;
 ///  }
 ///
-///  .item {
+///  .box__item--vertical-center {
 ///    @include vertical-center;
 ///  }
+///
+/// @example html
+///  <div class="box">
+///    <div class="box__item box__item--vertical-center"></item>
+///  </div>
 @mixin vertical-center {
   position: absolute;
   top: 50%;
@@ -36,14 +23,21 @@
 
 /// Horizontally centers an item with absolute positioning. Make sure parent is `position: relative`.
 ///
+/// @group 03-positioning
+///
 /// @example scss - Sample Usage
 ///  .box {
 ///    position: relative;
 ///  }
 ///
-///  .item {
+///  .box__item--horizontal-center {
 ///    @include horizontal-center;
 ///  }
+///
+/// @example html
+///  <div class="box">
+///    <div class="box__item box__item--horizontal-center"></item>
+///  </div>
 @mixin horizontal-center {
   left: 50%;
   position: absolute;
@@ -52,14 +46,21 @@
 
 /// Horizontally and vertically centers an item with absolute positioning. Make sure parent is `position: relative`.
 ///
+/// @group 03-positioning
+///
 /// @example scss - Sample Usage
 ///  .box {
 ///    position: relative;
 ///  }
 ///
-///  .item {
+///  .box__item--absolute-center {
 ///    @include absolute-center;
 ///  }
+///
+/// @example html
+///  <div class="box">
+///    <div class="box__item box__item--absolute-center"></item>
+///  </div>
 @mixin absolute-center {
   left: 50%;
   position: absolute;

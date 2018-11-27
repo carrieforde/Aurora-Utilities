@@ -1,0 +1,16 @@
+/// Get a z-index from a map.
+///
+/// @group 02-z-index
+///
+/// @param  {String} $index        - The index to get.
+/// @param  {Map}    $z [$z-index] - The map containing z-indeces.
+/// @return {Number}               - The corresponding z-index value.
+@function z($index, $z: $z-index) {
+  @if not $map {
+    @error 'Value passed for $map not found!';
+  }
+  @if not map-get($z, $index) {
+    @error 'No index `#{inspect($index)}` found!';
+  }
+  @return map-get($z, $index);
+}

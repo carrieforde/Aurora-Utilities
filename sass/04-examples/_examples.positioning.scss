@@ -1,0 +1,23 @@
+.box {
+  background-color: $color-gray-light;
+  height: 100px;
+  position: relative;
+
+  &__item {
+    background-color: $color-primary;
+    height: 50px;
+    width: 100px;
+
+    &--horizontal-center {
+      @include horizontal-center;
+    }
+
+    &--vertical-center {
+      @include vertical-center;
+    }
+
+    &--absolute-center {
+      @include absolute-center;
+    }
+  }
+}

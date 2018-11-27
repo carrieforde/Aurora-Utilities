@@ -1,0 +1,17 @@
+/// Get a breakpoint from a map.
+///
+/// @group 02-breakpoint
+///
+/// @param {String} $breakpoint - The breakpoint key.
+/// @param {Map} $map [$breakpoints] - The map containing the breakpoint.
+/// @return {Number} - The breakpoint value.
+@function breakpoint($breakpoint, $map: $breakpoints) {
+  @if not $map {
+    @error 'Value passed for $map not found!';
+  }
+  @if not map-get($map, $breakpoint) {
+    @error 'No breakpoint `#{inspect($breakpoint)}` found!';
+  }
+
+  @return map-get($map, $breakpoint);
+}

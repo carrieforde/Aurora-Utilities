@@ -1,70 +1,91 @@
-// FUNCTIONS
-
-/// Removes unit from length.
+/// Easily grab a color from a map.
 ///
-/// @param  {Number} $number - Number from which to remove unit.
-/// @return {Number}         - Unitless number.
+/// @group 02-color
 ///
-/// @link   https://css-tricks.com/snippets/sass/strip-unit-function/
-@function strip-unit($number) {
-  @if type-of($number) == 'number' and not unitless($number) {
-    @return $number/($number * 0 + 1);
+/// @param {Map} $map - The map containing the color value.
+/// @param {Number|String} $key - The key for the desired value.
+/// @return {Color} - The desired color.
+@function color($map, $key) {
+  @if not $map {
+    @error '`#{inspect($map)}` map not found!';
   }
 
-  @return $number;
+  @if not map-get($map, $key) {
+    @error 'No key `#{inspect($key)}` found in `#{$map}`!';
+  }
+
+  @return map-get($map, $key);
 }
 
-/// Get a unitless number from two numbers. Helpful for calculation line height.
+/// Get a primary color value.
 ///
-/// @param  {Number} $number                 - Numerator for calculation.
-/// @param  {Number} $base [$base-font-size] - Denominator for calculation.
-/// @return {Number}                         - Number without units.
-@function unitless-calc($number, $base: $base-font-size) {
-  @if not unitless($number) {
-    $number: strip-unit($number);
-  }
-
-  @if not unitless($base) {
-    $base: strip-unit($base);
-  }
-
-  @return $number / $base;
+/// @group 02-color
+///
+/// @param {Number|String} $key - The key for the desired value.
+/// @param {Map} $map [$primary-colors] - The map containing the color value.
+/// @return {Color} - The desired color.
+@function primary-color($key, $map: $primary-colors) {
+  @return color($map, $key);
 }
 
-/// Convert a pixel value to ems. Pass `$base` for increased accuracy.
+/// Get a neutral color value.
 ///
-/// @param  {Number} $pxval                  - The pixel value to convert.
-/// @param  {Number} $base [$base-font-size] - The pixel equivalent of ancestor font size.
-/// @return {Number}                         - The `em` font size.
+/// @group 02-color
 ///
-/// @link   https://github.com/thoughtbot/bourbon/blob/v4-stable/app/assets/stylesheets/functions/_px-to-em.scss
-@function em($pxval, $base: $base-font-size) {
-  @if not unitless($pxval) {
-    $pxval: strip-unit($pxval);
-  }
-
-  @if not unitless($base) {
-    $base: strip-unit($base);
-  }
-
-  @return ($pxval / $base) * 1em;
+/// @param {Number|String} $key - The key for the desired value.
+/// @param {Map} $map [$neutral-colors] - The map containing the color value.
+/// @return {Color} - The desired color.
+@function neutral-color($key, $map: $neutral-colors) {
+  @return color($map, $key);
 }
 
-/// Convert a pixel value to rems.
+/// Get a accent color value.
 ///
-/// @param  {Number} $pxval - The pixel value to convert.
-/// @return {Number}        - The `rem` font size.
+/// @group 02-color
 ///
-/// @link   https://github.com/thoughtbot/bourbon/blob/v4-stable/app/assets/stylesheets/functions/_px-to-rem.scss
-@function rem($pxval) {
-  @if not unitless($pxval) {
-    $pxval: strip-unit($pxval);
-  }
+/// @param {Number|String} $key - The key for the desired value.
+/// @param {Map} $map [$accent-colors] - The map containing the color value.
+/// @return {Color} - The desired color.
+@function neutral-color($key, $map: $accent-colors) {
+  @return color($map, $key);
+}
 
-  @return ($pxval / $base-font-size) * 1rem;
+/// Get a success color value.
+///
+/// @group 02-color
+///
+/// @param {Number|String} $key - The key for the desired value.
+/// @param {Map} $map [$success-colors] - The map containing the color value.
+/// @return {Color} - The desired color.
+@function success-color($key, $map: $success-colors) {
+  @return color($map, $key);
+}
+
+/// Get a warning color value.
+///
+/// @group 02-color
+///
+/// @param {Number|String} $key - The key for the desired value.
+/// @param {Map} $map [$warning-colors] - The map containing the color value.
+/// @return {Color} - The desired color.
+@function warning-color($key, $map: $warning-colors) {
+  @return color($map, $key);
+}
+
+/// Get a danger color value.
+///
+/// @group 02-color
+///
+/// @param {Number|String} $key - The key for the desired value.
+/// @param {Map} $map [$danger-colors] - The map containing the color value.
+/// @return {Color} - The desired color.
+@function danger-color($key, $map: $danger-colors) {
+  @return color($map, $key);
 }
 
 /// Tint a color (add white) by a specified amount.
+///
+/// @group 02-color
 ///
 /// @param  {Color}  $color  - The color to tint.
 /// @param  {Number} $amount - The amount of white to add.
@@ -75,16 +96,19 @@
 
 /// Tone a color (add gray) by a specified amount.
 ///
+/// @group 02-color
+///
 /// @param  {Color}  $color          - The color to tone.
 /// @param  {Number} $amount         - The amount of gray to add.
 /// @param  {Color}  $gray [#808080] - The gray to mix.
 /// @return {Color}                  - The toned color.
-/// @todo Replace hardcoded gray with global / default specified in `_config.scss`.
-@function tone($color, $amount, $gray: #808080) {
+@function tone($color, $amount, $gray: neutral-color(500)) {
   @return mix($gray, $color, $amount);
 }
 
 /// Shade a color (add black) by a specified amount.
+///
+/// @group 02-color
 ///
 /// @param  {Color}  $color  - The color to shade.
 /// @param  {Number} $amount - The amount of black to add.
@@ -93,19 +117,9 @@
   @return mix(#000, $color, $amount);
 }
 
-/// Get a z-index from a z-index map.
-///
-/// @param  {String} $index        - The index to get.
-/// @param  {Map}    $z [$z-index] - The map containing z-indeces.
-/// @return {Number}               - The corresponding z-index value.
-@function z($index, $z: $z-index) {
-  @if not map-get($z, $index) {
-    @warn 'No index `#{inspect($index)}` found!';
-  }
-  @return map-get($z, $index);
-}
-
 /// Calculate the luminance of a given color.
+///
+/// @group 02-color
 ///
 /// @param  {Color}  $color - The color to check.
 /// @return {Number}        - The color's luminance.
@@ -121,6 +135,8 @@
 
 /// Calculate the contrast between two colors.
 ///
+/// @group 02-color
+///
 /// @param  {Color}  $color1 - The first color to check.
 /// @param  {Color}  $color2 - The second color to check.
 /// @return {Number}         - The contrast ratio between the two colors.
@@ -134,6 +150,8 @@
 }
 
 /// Chooses the color with the best contrast for the base.
+///
+/// @group 02-color
 ///
 /// @param  {Color} $base-color                  - The color against which to check.
 /// @param  {Color} $light [$text-default-light] - The light color against which to check.

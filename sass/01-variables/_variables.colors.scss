@@ -1,0 +1,154 @@
+/// Primary colors
+///
+/// @group 01-colors
+///
+/// @type Map
+/// @colors primary-colors
+$primary-colors: (
+  900: #082449,
+  800: #0c356b,
+  700: #104993,
+  600: #1560c1,
+  500: #2f80e8,
+  400: #75abef,
+  300: #b6d1f7,
+  200: #dfebfb,
+  100: #f6f9fe
+);
+
+@include herman-add('colors', 'primary-colors', $primary-colors);
+
+/// Accent colors
+///
+/// @group 01-colors
+///
+/// @type Map
+/// @colors accent-colors
+$accent-colors: (
+  900: #492c08,
+  800: #6a410c,
+  700: #935a10,
+  600: #c17716,
+  500: #e8982f,
+  400: #f0ba75,
+  300: #f7d9b6,
+  200: #fbefdf,
+  100: #fefdfa
+);
+
+@include herman-add('colors', 'accent-colors', $accent-colors);
+
+/// Neutral colors
+///
+/// @group 01-colors
+///
+/// @type Map
+/// @colors neutral-colors
+$neutral-colors: (
+  900: #27292b,
+  800: #383a3e,
+  700: #4e5156,
+  600: #666a70,
+  500: #868b92,
+  400: #b4b7bb,
+  300: #dadbdd,
+  200: #f2f2f3,
+  100: #fafafa
+);
+
+@include herman-add('colors', 'neutral-colors', $neutral-colors);
+
+/// Success colors
+///
+/// @group 01-colors
+///
+/// @type Map
+/// @colors success-colors
+$success-colors: (
+  900: #063709,
+  800: #0b5c10,
+  700: #0f8a15,
+  600: #15c11e,
+  500: #30e83a,
+  400: #75f07c,
+  300: #b6f7b9,
+  200: #e2fce5,
+  100: #f6fef6
+);
+
+@include herman-add('colors', 'success-colors', $success-colors);
+
+/// Warning colors
+///
+/// @group 01-colors
+///
+/// @type Map
+/// @colors warning-colors
+$warning-colors: (
+  900: #404007,
+  800: #60600c,
+  700: #939311,
+  600: #c1c016,
+  500: #e8e830,
+  400: #f2f28c,
+  300: #f7f7ba,
+  200: #fbfbdf,
+  100: #fefef6
+);
+
+@include herman-add('colors', 'warning-colors', $warning-colors);
+
+/// Danger colors
+///
+/// @group 01-colors
+///
+/// @type Map
+/// @colors danger-colors
+$danger-colors: (
+  900: #490808,
+  800: #6a0c0c,
+  700: #931010,
+  600: #c11514,
+  500: #e82f30,
+  400: #ef6c6c,
+  300: #f4999a,
+  200: #fbdada,
+  100: #fefafa
+);
+
+@include herman-add('colors', 'danger-colors', $danger-colors);
+
+$color-primary: map-get($primary-colors, 500);
+$color-accent: map-get($accent-colors, 500);
+$color-success: map-get($success-colors, 600);
+$color-warning: map-get($warning-colors, 500);
+$color-danger: map-get($danger-colors, 500);
+$color-gray-mid: map-get($neutral-colors, 500);
+$color-gray-light: map-get($neutral-colors, 100);
+$color-gray-dark: map-get($neutral-colors, 900);
+$color-white: #fff;
+$color-black: #000;
+
+/// Editor palette
+///
+/// The colors available within the WordPress editor.
+///
+/// @group 01-colors
+///
+/// @type Map
+/// @colors editor-palette
+$editor-palette: (
+  primary: $color-primary,
+  accent: $color-accent,
+  success: $color-success,
+  warning: $color-warning,
+  danger: $color-danger,
+  gray-mid: $color-gray-mid,
+  gray-light: $color-gray-light,
+  gray-dark: $color-gray-dark
+);
+
+@include herman-add('colors', 'editor-palette', $editor-palette);
+
+$text-default-dark: $color-gray-dark;
+$text-default-light: $color-white;

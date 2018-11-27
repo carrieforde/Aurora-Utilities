@@ -8,6 +8,8 @@
 @import '01-variables/variables.widths';
 @import '01-variables/variables.z-index';
 
+@include herman-export;
+
 // Functions
 @import '02-functions/functions.breakpoint';
 @import '02-functions/functions.color';
@@ -21,3 +23,9 @@
 @import '03-mixins/mixins.media-queries';
 @import '03-mixins/mixins.positioning';
 @import '03-mixins/mixins.utilities';
+
+// Examples
+@import '04-examples/examples.positioning';
+@import '04-examples/examples.buttons';
+@import '04-examples/examples.links';
+@import '04-examples/examples.utilities';

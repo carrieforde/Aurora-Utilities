@@ -1,0 +1,9 @@
+a {
+  @include link($color-primary, $color-accent);
+
+  transition: color 0.3s ease;
+}
+
+.link-fancy {
+  @include decorative-link($content: '\00BB', $after-color: $color-accent);
+}

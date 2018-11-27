@@ -1,0 +1,27 @@
+/// Set the max width of the site
+///
+/// @group 01-widths
+///
+/// @type Number
+$site-width: 100%;
+
+/// Set the width of the site's content
+///
+/// @group 01-widths
+///
+/// @type Number
+$content-width: 1050px;
+
+/// Set the width of the site's [optional] sidebar
+///
+/// @group 01-widths
+///
+/// @type Number
+$sidebar-width: 300px;
+
+/// Set the width of the page content
+///
+/// @group 01-widths
+///
+/// @type Number
+$page-content-width: 660px;

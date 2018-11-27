@@ -1,11 +1,17 @@
-// MEDIA QUERIES
-
 /// Create a `min-width` media query.
+///
+/// @group 03-media-queries
 ///
 /// @param {Number} $min - The length to be used.
 ///
 /// @example - scss Usage
-///  @include mq-min($desktop) {...}
+///  .block {
+///    display: none;
+///
+///    @include mq-min(breakpoint(desktop)) {
+///      display: block;
+///    }
+///  }
 @mixin mq-min($min) {
   @if type-of($min) != 'number' {
     @error '$min is not a length unit.';
@@ -19,10 +25,18 @@
 /// Create a `max-width` media query.
 /// `max-width` subtracts 1 unit to avoid conflicts with `min-width` queries.
 ///
+/// @group 03-media-queries
+///
 /// @param {Number} $min - The length to be used.
 ///
 /// @example - scss Usage
-///  @include mq-min($desktop) {...}
+///  .block {
+///    display: none;
+///
+///    @include mq-max(breakpoint(desktop)) {
+///      display: block;
+///    }
+///  }
 @mixin mq-max($max) {
   @if type-of($max) != 'number' {
     @error '$max is not a length unit.';
@@ -36,11 +50,17 @@
 /// Create a media query range (between `min-width` and `max-width`).
 /// `max-width` subtracts 1 unit to avoid conflicts with `min-width` queries.
 ///
+/// @group 03-media-queries
+///
 /// @param {Number} $min - The minimum breakpoint.
 /// @param {Number} $max - The maximum breakpoint.
 ///
 /// @example - scss Usage
-///  @include ($tablet-portrait, $tablet-landscape) {...}
+///  .block {
+///    @include mq(breakpoint(tablet-portrait), breakpoint(tablet-landscape)) {
+///      display: block;
+///    }
+///  }
 @mixin mq($min: null, $max: null) {
   @if $min == null {
     @include mq-max($max) {

@@ -1,12 +1,19 @@
-// COLOR
-
 /// Create color classes by looping through a color Sass map.
+///
+/// @group 03-colors
 ///
 /// @param {Map} $color-map [$theme-colors] - The main theme color map (set in _config.scss).
 /// @param {Boolean} $include-bg [true] - Whether to create background-color classes.
 /// @param {Boolean} $include-text [true] - Whether to create text / color classes.
 /// @param {Boolean} $include-fill [false] - Whether to include icon / fill color classes.
-@mixin colors($color-map: $theme-colors, $include-bg: true, $include-text: true, $include-fill: false) {
+/// @param {Boolean} $include-wp [false] - Whether to include color classes for the WordPress editor.
+@mixin colors(
+  $color-map: $theme-colors,
+  $include-bg: true,
+  $include-text: true,
+  $include-fill: false,
+  $include-wp: false
+) {
   @each $name, $color in $color-map {
     @if $include-bg {
       .bg-#{$name} {
@@ -23,6 +30,16 @@
     @if $include-fill {
       .fill-#{$name} {
         fill: $color;
+      }
+    }
+
+    @if $include-wp {
+      .has-#{$name}-color {
+        color: $color !important;
+      }
+
+      .has-#{$name}-background-color {
+        background-color: $color !important;
       }
     }
   }

@@ -1,9 +1,16 @@
-// UTILITIES
-
 /// Always clear floats.
 ///
+/// @group 03-utilities
+///
 /// @example - scss Usage
-///  @include clearfix;
+///  .clearfix {
+///    @include clearfix;
+///  }
+///
+/// @example html
+///  <div class="clearfix">
+///    <div style="float:left; height: 200px; width: 300px;"></div>
+///  </div>
 ///
 /// @link http://nicolasgallagher.com/micro-clearfix-hack/
 @mixin clearfix {
@@ -22,8 +29,21 @@
 
 /// Removes list delimiters, margin, and padding from `ul` or `ol` elements.
 ///
+/// @group 03-utilities
+///
 /// @example - scss Usage
-///  @include list-reset
+///  .list-reset {
+///    @include list-reset;
+///  }
+///
+/// @example html
+///  <ul class="list-reset">
+///    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+///    <li>Aliquam tincidunt mauris eu risus.</li>
+///    <li>Vestibulum auctor dapibus neque.</li>
+///    <li>Nunc dignissim risus id metus.</li>
+///    <li>Cras ornare tristique elit.</li>
+///  </ul>
 @mixin list-reset {
   list-style: none;
   margin: 0;
@@ -32,8 +52,17 @@
 
 /// Extend an element to the edge of the viewport when the parent has a fixed width.
 ///
+/// @group 03-utilities
+///
 /// @example - scss Usage
-///  @include full-width
+///  .full-width {
+///    @include full-width;
+///  }
+///
+/// @example html
+///  <div class="full-width-parent">
+///    <div class="full-width"></div>
+///  </div>
 ///
 /// @link https://css-tricks.com/full-width-containers-limited-width-parents/
 @mixin full-width {
@@ -47,8 +76,17 @@
 
 /// Visually hides text, but text is still available for screen readers. Text is not focusable.
 ///
+/// @group 03-utilities
+///
 /// @example - scss Usage
-///  @include screen-reader-text
+///  .screen-reader-text {
+///    @include screen-reader-text;
+///  }
+///
+/// @example html
+///  <button type="button" class="button button--close">
+///    <span class="screen-reader-text">Close</span>
+///  </button>
 @mixin screen-reader-text {
   border: 0;
   clip: rect(0 0 0 0);
@@ -62,8 +100,15 @@
 
 /// Visually hides text, but it's still available for screen readers, and is still focusable.
 ///
+/// @group 03-utilities
+///
 /// @example - scss Usage
-///  @include screen-reader-text-focusable
+///  .screen-reader-text {
+///    @include screen-reader-text-focusable;
+///  }
+///
+/// @example html
+///  <button type="button" class="button screen-reader-text screen-reader-focusable">Close</button>
 @mixin screen-reader-text-focusable {
   &:focus {
     border: auto;
@@ -78,8 +123,15 @@
 
 /// Centers a background image, and makes sure it covers its container.
 ///
+/// @group 03-utilities
+///
 /// @example - scss Usage
-///  @include image-as-background
+///  .image-as-background {
+///    @include image-as-background
+///  }
+///
+/// @example html
+/// <div class="image-as-background" style="background-image: url(https://picsum.photos/1125/750/?image=1022);"></div>
 @mixin image-as-background {
   background-position: center;
   background-size: cover;
@@ -87,49 +139,54 @@
 
 /// Declare the element `height` and `width`.
 ///
+/// @group 03-utilities
+///
 /// @param {Number} $width           - The element width.
 /// @param {Number} $height [$width] - The element height.
 ///
 /// @example - scss Usage
-///  .el {
-///    @include size(50px, 150px);
+///  .size {
+///    @include size(rem(150), rem(50));
 ///  }
 ///
-/// @example - css Output
-///  .el {
-///    height: 150px;
-///    width: 50px;
-///  }
+/// @example html
+///  <div class="size"></div>
 ///
 /// @example - scss Usage
-///  .el {
+///  .size--one-parameter {
 ///    @include size(50px);
 ///  }
 ///
-/// @example - css Output
-///  .el {
-///    height: 50px;
-///    width: 50px;
-///  }
-@mixin size($width, $height) {
-  @if not $height {
-    $height: $width;
-  }
-
+/// @example html
+///  <div class="size size--one-parameter"></div>
+@mixin size($width, $height: $width) {
   height: $height;
   width: $width;
 }
 
 /// Set an aspect ratio on an element.
 ///
+/// @group 03-utilities
+///
 /// @param {Number} $width    - The width ratio, this value should be unitless.
 /// @param {Number} $height   - The height ratio, this value should be unitless.
 /// @param {Number} $el-width - The element width.
 ///
 /// @example - scss Usage for 3:2 ratio
-///  .el {
+///  .ratio {
 ///    @include aspect-ratio(3, 2, 50%);
 ///  }
+///
+/// @example html
+///  <div class="ratio"></div>
+///
+/// @example - scss Usage for 16:9 ratio
+///  .ratio--16-9 {
+///    @include aspect-ratio(16, 9, 50%);
+///  }
+///
+/// @example html
+///  <div class="ratio ratio--16-9"></div>
 @mixin aspect-ratio($width, $height, $el-width) {
   @include size($el-width, 0);
 

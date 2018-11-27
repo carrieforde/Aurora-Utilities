@@ -1,0 +1,61 @@
+.clearfix {
+  @include clearfix;
+
+  background-color: $color-gray-light;
+
+  > div {
+    background-color: $color-primary;
+  }
+}
+
+.list-reset {
+  @include list-reset;
+}
+
+.full-width-parent {
+  background-color: $color-gray-mid;
+  margin: 0 auto;
+  padding: 20px;
+  width: 80%;
+}
+
+.full-width {
+  @include full-width;
+
+  background-color: $color-primary;
+  height: 150px;
+}
+
+.screen-reader-text {
+  @include screen-reader-text;
+  @include screen-reader-text-focusable;
+}
+
+.image-as-background {
+  @include image-as-background;
+  @include aspect-ratio(3, 2, 50%);
+}
+
+.size {
+  @include size(rem(150), rem(50));
+
+  background-color: $color-primary;
+
+  &--one-parameter {
+    @include size(rem(50));
+
+    background-color: $color-accent;
+  }
+}
+
+.ratio {
+  @include aspect-ratio(3, 2, 50%);
+
+  background-color: $color-primary;
+
+  &--16-9 {
+    @include aspect-ratio(16, 9, 50%);
+
+    background-color: $color-accent;
+  }
+}

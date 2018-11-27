@@ -1,0 +1,12 @@
+/// Breakpoints - add more as needed.
+///
+/// @group 01-breakpoints
+///
+/// @type Map
+/// @link https://medium.freecodecamp.com/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862#.or3duno2h
+$breakpoints: (
+  tablet-portrait: 600px,
+  tablet-landscape: 900px,
+  desktop: 1200px,
+  desktop-xl: 1800px
+);
