@@ -1,0 +1,11 @@
+.list-reset {
+  @include list-reset;
+}
+
+.list-bulleted {
+  @include custom-bullets('\00BB');
+}
+
+.list-numbered {
+  @include custom-numbers('decimal', 'lower-roman', 'lower-alpha');
+}

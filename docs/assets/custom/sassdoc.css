@@ -193,11 +193,6 @@ a {
   .clearfix > div {
     background-color: #2f80e8; }
 
-.list-reset {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
 .full-width-parent {
   background-color: #868b92;
   margin: 0 auto;
@@ -258,6 +253,50 @@ a {
     width: 50%;
     padding-top: 28.125%;
     background-color: #e8982f; }
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.list-bulleted,
+.list-bulleted ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.list-bulleted li {
+  margin-left: 1em; }
+  .list-bulleted li:before {
+    color: #2f80e8;
+    content: "\BB";
+    float: left;
+    font-size: 1rem;
+    margin-left: -1em; }
+
+.list-numbered,
+.list-numbered ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: ordered-list; }
+
+.list-numbered li {
+  margin-left: 1em; }
+  .list-numbered li:before {
+    color: #2f80e8;
+    content: counter(ordered-list, decimal);
+    counter-increment: ordered-list;
+    float: left;
+    font-size: 1rem;
+    margin-left: -1em;
+    text-align: right; }
+
+.list-numbered ol li:before {
+  content: counter(ordered-list, lower-roman); }
+
+.list-numbered ol ol li:before {
+  content: counter(ordered-list, lower-alpha); }
 
 
 /*# sourceMappingURL=sassdoc.css.map*/

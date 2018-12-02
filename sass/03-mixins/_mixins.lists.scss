@@ -1,0 +1,137 @@
+/// Removes list delimiters, margin, and padding from `ul` or `ol` elements.
+///
+/// @group 03-lists
+///
+/// @example - scss Usage
+///  .list-reset {
+///    @include list-reset;
+///  }
+///
+/// @example html
+///  <ul class="list-reset">
+///    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+///    <li>Aliquam tincidunt mauris eu risus.</li>
+///    <li>Vestibulum auctor dapibus neque.</li>
+///    <li>Nunc dignissim risus id metus.</li>
+///    <li>Cras ornare tristique elit.</li>
+///  </ul>
+@mixin list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/// Custom bullets
+///
+/// @group 03-lists
+///
+/// @example - scss Usage
+///  .list-bulleted {
+///    @include custom-bullets('\00BB');
+///  }
+///
+/// @example html
+///  <ul class="list-bulleted">
+///    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+///    <li>Aliquam tincidunt mauris eu risus.
+///      <ul>
+///        <li>Vestibulum auctor dapibus neque.</li>
+///        <li>Nunc dignissim risus id metus.
+///          <ul>
+///            <li>Cras ornare tristique elit.</li>
+///            <li>Vivamus vestibulum ntulla nec ante.</li>
+///          </ul>
+///        </li>
+///      </ul>
+///    </li>
+///  </ul>
+@mixin custom-bullets($marker: '\2022', $color: $color-primary, $size: 1rem, $gutter: 1em) {
+  &,
+  & ul {
+    @include list-reset;
+  }
+
+  li {
+    margin-left: $gutter;
+
+    &:before {
+      color: $color;
+      content: $marker;
+      float: left;
+      font-size: $size;
+      margin-left: $gutter * -1;
+    }
+  }
+}
+
+/// Custom numbering
+///
+/// @group 03-lists
+///
+/// @example - scss Usage
+///  .list-numbered {
+///    @include custom-numbers('decimal', 'lower-roman', 'lower-alpha');
+///  }
+///
+/// @example html
+///  <ol class="list-numbered">
+///    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+///    <li>Aliquam tincidunt mauris eu risus.
+///      <ol>
+///        <li>Vestibulum auctor dapibus neque.</li>
+///        <li>Nunc dignissim risus id metus.
+///          <ol>
+///            <li>Cras ornare tristique elit.</li>
+///            <li>Vivamus vestibulum ntulla nec ante.</li>
+///          </ol>
+///        </li>
+///      </ol>
+///    </li>
+///  </ol>
+@mixin custom-numbers(
+  $level1: 'decimal',
+  $level2: $level1,
+  $level3: $level2,
+  $color: $color-primary,
+  $size: 1rem,
+  $gutter: 1em
+) {
+  &,
+  & ol {
+    @include list-reset;
+
+    counter-reset: ordered-list;
+  }
+
+  li {
+    margin-left: $gutter;
+
+    &:before {
+      color: $color;
+      content: counter(ordered-list, #{$level1});
+      counter-increment: ordered-list;
+      float: left;
+      font-size: $size;
+      margin-left: $gutter * -1;
+      text-align: right;
+    }
+  }
+
+  // stylelint-disable no-descending-specificity
+  ol {
+    li {
+      &:before {
+        content: counter(ordered-list, #{$level2});
+      }
+    }
+
+    ol {
+      li {
+        &:before {
+          content: counter(ordered-list, #{$level3});
+        }
+      }
+    }
+  }
+  // stylelint-enable
+}

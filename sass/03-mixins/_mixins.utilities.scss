@@ -27,29 +27,6 @@
   }
 }
 
-/// Removes list delimiters, margin, and padding from `ul` or `ol` elements.
-///
-/// @group 03-utilities
-///
-/// @example - scss Usage
-///  .list-reset {
-///    @include list-reset;
-///  }
-///
-/// @example html
-///  <ul class="list-reset">
-///    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-///    <li>Aliquam tincidunt mauris eu risus.</li>
-///    <li>Vestibulum auctor dapibus neque.</li>
-///    <li>Nunc dignissim risus id metus.</li>
-///    <li>Cras ornare tristique elit.</li>
-///  </ul>
-@mixin list-reset {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 /// Extend an element to the edge of the viewport when the parent has a fixed width.
 ///
 /// @group 03-utilities
