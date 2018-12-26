@@ -1,6 +1,6 @@
 {
   "name": "aurora-utilities",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Sass and JavaScript utilities for all your front end projects.",
   "main": "index.js",
   "scripts": {
