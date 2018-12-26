@@ -21,8 +21,6 @@ $sans-serif: (
     )
 );
 
-@include herman-add('fonts', 'sans-serif', $sans-serif);
-
 /// Serif
 ///
 /// @group 01-typography
@@ -53,8 +51,6 @@ $serif: (
     )
 );
 
-@include herman-add('fonts', 'serif', $serif);
-
 /// Monospace
 ///
 /// @group 01-typography
@@ -65,8 +61,6 @@ $monospace: (
   name: 'Monospace',
   stack: (SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace)
 );
-
-@include herman-add('fonts', 'monospace', $monospace);
 
 $font-sans-serif: map-get($sans-serif, stack) !default;
 $font-serif: map-get($serif, stack) !default;

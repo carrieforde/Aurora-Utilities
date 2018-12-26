@@ -8,8 +8,6 @@
 @import '01-variables/variables.widths';
 @import '01-variables/variables.z-index';
 
-@include herman-export;
-
 // Functions
 @import '02-functions/functions.breakpoint';
 @import '02-functions/functions.color';
@@ -31,3 +29,15 @@
 @import '04-examples/examples.links';
 @import '04-examples/examples.utilities';
 @import '04-examples/examples.lists';
+
+@include herman-add('colors', 'primary-colors', $primary-colors);
+@include herman-add('colors', 'accent-colors', $accent-colors);
+@include herman-add('colors', 'neutral-colors', $neutral-colors);
+@include herman-add('colors', 'success-colors', $success-colors);
+@include herman-add('colors', 'warning-colors', $warning-colors);
+@include herman-add('colors', 'danger-colors', $danger-colors);
+@include herman-add('colors', 'editor-palette', $editor-palette);
+@include herman-add('fonts', 'sans-serif', $sans-serif);
+@include herman-add('fonts', 'serif', $serif);
+@include herman-add('fonts', 'monospace', $monospace);
+@include herman-export;

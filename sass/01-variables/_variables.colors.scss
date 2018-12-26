@@ -16,8 +16,6 @@ $primary-colors: (
   100: #f6f9fe
 );
 
-@include herman-add('colors', 'primary-colors', $primary-colors);
-
 /// Accent colors
 ///
 /// @group 01-colors
@@ -35,8 +33,6 @@ $accent-colors: (
   200: #fbefdf,
   100: #fefdfa
 );
-
-@include herman-add('colors', 'accent-colors', $accent-colors);
 
 /// Neutral colors
 ///
@@ -56,8 +52,6 @@ $neutral-colors: (
   100: #fafafa
 );
 
-@include herman-add('colors', 'neutral-colors', $neutral-colors);
-
 /// Success colors
 ///
 /// @group 01-colors
@@ -75,8 +69,6 @@ $success-colors: (
   200: #e2fce5,
   100: #f6fef6
 );
-
-@include herman-add('colors', 'success-colors', $success-colors);
 
 /// Warning colors
 ///
@@ -96,8 +88,6 @@ $warning-colors: (
   100: #fefef6
 );
 
-@include herman-add('colors', 'warning-colors', $warning-colors);
-
 /// Danger colors
 ///
 /// @group 01-colors
@@ -115,8 +105,6 @@ $danger-colors: (
   200: #fbdada,
   100: #fefafa
 );
-
-@include herman-add('colors', 'danger-colors', $danger-colors);
 
 $color-primary: map-get($primary-colors, 500);
 $color-accent: map-get($accent-colors, 500);
@@ -147,8 +135,6 @@ $editor-palette: (
   gray-light: $color-gray-light,
   gray-dark: $color-gray-dark
 );
-
-@include herman-add('colors', 'editor-palette', $editor-palette);
 
 $text-default-dark: $color-gray-dark;
 $text-default-light: $color-white;
