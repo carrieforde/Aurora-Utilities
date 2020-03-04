@@ -3,25 +3,25 @@
 /// @group 01-widths
 ///
 /// @type Number
-$site-width: 100%;
+$site-width: 100% !default;
 
 /// Set the width of the site's content
 ///
 /// @group 01-widths
 ///
 /// @type Number
-$content-width: 1050px;
+$content-width: 1050px !default;
 
 /// Set the width of the site's [optional] sidebar
 ///
 /// @group 01-widths
 ///
 /// @type Number
-$sidebar-width: 300px;
+$sidebar-width: 300px !default;
 
 /// Set the width of the page content
 ///
 /// @group 01-widths
 ///
 /// @type Number
-$page-content-width: 660px;
+$page-content-width: 640px !default;

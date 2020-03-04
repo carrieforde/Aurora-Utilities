@@ -19,7 +19,7 @@ $sans-serif: (
       'Segoe UI Emoji',
       'Segoe UI Symbol'
     )
-);
+) !default;
 
 /// Serif
 ///
@@ -49,7 +49,7 @@ $serif: (
       Georgia,
       serif
     )
-);
+) !default;
 
 /// Monospace
 ///
@@ -60,7 +60,7 @@ $serif: (
 $monospace: (
   name: 'Monospace',
   stack: (SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace)
-);
+) !default;
 
 $font-sans-serif: map-get($sans-serif, stack) !default;
 $font-serif: map-get($serif, stack) !default;
@@ -71,7 +71,7 @@ $font-monospace: map-get($monospace, stack) !default;
 /// @group 01-typography
 ///
 /// @type String
-$base-font-family: $font-sans-serif;
+$base-font-family: $font-sans-serif !default;
 
 /// Set the base (`root`) font size for the project. This should be unitless!
 ///

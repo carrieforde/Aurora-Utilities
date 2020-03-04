@@ -14,7 +14,7 @@ $primary-colors: (
   300: #b6d1f7,
   200: #dfebfb,
   100: #f6f9fe
-);
+) !default;
 
 /// Accent colors
 ///
@@ -32,7 +32,7 @@ $accent-colors: (
   300: #f7d9b6,
   200: #fbefdf,
   100: #fefdfa
-);
+) !default;
 
 /// Neutral colors
 ///
@@ -50,7 +50,7 @@ $neutral-colors: (
   300: #dadbdd,
   200: #f2f2f3,
   100: #fafafa
-);
+) !default;
 
 /// Success colors
 ///
@@ -68,7 +68,7 @@ $success-colors: (
   300: #b6f7b9,
   200: #e2fce5,
   100: #f6fef6
-);
+) !default;
 
 /// Warning colors
 ///
@@ -86,7 +86,7 @@ $warning-colors: (
   300: #f7f7ba,
   200: #fbfbdf,
   100: #fefef6
-);
+) !default;
 
 /// Danger colors
 ///
@@ -104,18 +104,18 @@ $danger-colors: (
   300: #f4999a,
   200: #fbdada,
   100: #fefafa
-);
+) !default;
 
-$color-primary: map-get($primary-colors, 500);
-$color-accent: map-get($accent-colors, 500);
-$color-success: map-get($success-colors, 600);
-$color-warning: map-get($warning-colors, 500);
-$color-danger: map-get($danger-colors, 500);
-$color-gray-mid: map-get($neutral-colors, 500);
-$color-gray-light: map-get($neutral-colors, 100);
-$color-gray-dark: map-get($neutral-colors, 900);
-$color-white: #fff;
-$color-black: #000;
+$color-primary: map-get($primary-colors, 500) !default;
+$color-accent: map-get($accent-colors, 500) !default;
+$color-success: map-get($success-colors, 600) !default;
+$color-warning: map-get($warning-colors, 500) !default;
+$color-danger: map-get($danger-colors, 500) !default;
+$color-gray-mid: map-get($neutral-colors, 500) !default;
+$color-gray-light: map-get($neutral-colors, 100) !default;
+$color-gray-dark: map-get($neutral-colors, 900) !default;
+$color-white: #fff !default;
+$color-black: #000 !default;
 
 /// Editor palette
 ///
@@ -134,7 +134,7 @@ $editor-palette: (
   gray-mid: $color-gray-mid,
   gray-light: $color-gray-light,
   gray-dark: $color-gray-dark
-);
+) !default;
 
-$text-default-dark: $color-gray-dark;
-$text-default-light: $color-white;
+$text-default-dark: $color-gray-dark !default;
+$text-default-light: $color-white !default;
