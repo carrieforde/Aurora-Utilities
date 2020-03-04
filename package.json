@@ -6,17 +6,10 @@
   "scripts": {
     "build": "webpack --mode=production",
     "dev": "webpack --watch",
-    "eslint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "eslint:fix": "eslint \"src/**/*.{js,jsx}\" --quiet --fix",
-    "flow": "flow",
     "format": "prettier --write \"**/**/*.{js,jsx,scss}\"",
     "sassdoc": "sassdoc sass -c sassdoc-config.json",
     "stylelint": "stylelint \"**/**/*.{css,scss}\"",
-    "stylelint:fix": "stylelint \"**/**/*.{css,scss}\" --fix",
-    "test": "NODE_ENV=test jest"
-  },
-  "bin": {
-    "au-config": "./bin/au-config.js"
+    "stylelint:fix": "stylelint \"**/**/*.{css,scss}\" --fix"
   },
   "repository": {
     "type": "git",
@@ -24,7 +17,6 @@
   },
   "keywords": [
     "sass",
-    "javascript",
     "utilities"
   ],
   "author": "Carrie Forde <carrie@carrieforde.com> (https://carrieforde.com)",
@@ -34,39 +26,24 @@
   },
   "homepage": "https://github.com/carrieforde/Aurora-Utilities#readme",
   "devDependencies": {
-    "@babel/cli": "^7.1.5",
-    "@babel/core": "^7.1.6",
-    "@babel/preset-env": "^7.1.6",
-    "@babel/preset-flow": "^7.0.0",
-    "babel-eslint": "^8.2.3",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
-    "css-loader": "^1.0.1",
-    "eslint": "^4.19.1",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-loader": "^2.1.1",
-    "eslint-plugin-flow": "^2.29.1",
-    "eslint-plugin-flowtype": "^2.46.3",
-    "eslint-plugin-prettier": "^2.6.0",
-    "flow-bin": "^0.71.0",
-    "jest": "^22.4.3",
-    "mini-css-extract-plugin": "^0.4.5",
-    "node-sass": "^4.10.0",
-    "optimize-css-assets-webpack-plugin": "^5.0.1",
-    "prettier": "^1.12.1",
-    "sass-loader": "^7.1.0",
-    "sassdoc": "^2.5.1",
-    "sassdoc-theme-herman": "^3.0.0",
-    "style-loader": "^0.23.1",
-    "stylelint": "^9.2.0",
-    "stylelint-config-recommended-scss": "^3.2.0",
-    "stylelint-order": "^0.8.1",
-    "stylelint-scss": "^3.1.0",
-    "stylelint-webpack-plugin": "^0.10.5",
-    "uglifyjs-webpack-plugin": "^2.0.1",
-    "webpack": "^4.26.0",
-    "webpack-cli": "^3.1.2"
+    "css-loader": "^3.4.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "prettier": "^1.19.1",
+    "sass-loader": "^8.0.2",
+    "sassdoc": "^2.7.1",
+    "sassdoc-theme-herman": "^3.0.2",
+    "style-loader": "^1.1.3",
+    "stylelint": "^13.2.0",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-order": "^4.0.0",
+    "stylelint-scss": "^3.14.2",
+    "stylelint-webpack-plugin": "^1.2.3",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
   },
   "dependencies": {
-    "npm": "^6.0.0"
+    "npm": "^6.14.2"
   }
 }

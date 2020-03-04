@@ -1,22 +1,16 @@
-[![Build Status](https://travis-ci.org/carrieforde/Aurora-Utilities.svg?branch=master)](https://travis-ci.org/carrieforde/Aurora-Utilities)
-
 # Aurora Utilities
 
 Sass and JavaScript utilities for all your front end projects.
 
 ## Features
 
-This package is collection of helpful Sass and JavaScript utilities that keep you focused on building new features instead of recreating the wheel over and over.
+This package is collection of helpful Sass utilities that keep you focused on building new features instead of recreating the wheel over and over.
 
-The Sass and JavaScript included in this package only output what you use, so there is no need to worry adding bloat to your project.
+The Sass included in this package only outputs what you use, so there is no need to worry adding bloat to your project.
 
 ### Sass
 
 Aurora Utilities comes bundled with a set of helpful Sass functions and mixins that makes writing styles a breeze.
-
-### JavaScript
-
-_Coming soon_
 
 ## Installation
 
@@ -36,26 +30,12 @@ npm install --save-dev aurora-utilities
     {
       loader: 'sass-loader',
       options: {
+        sassOptions: {
         includePaths: [
-          'node_modules/aurora-utilities/sass',
-          'node_modules/sanitize.scss'
+          'aurora-utilities',
         ],
+        }
         sourceMap: true
-      }
-    }
-    ```
-
-    **Grunt example using `grunt-sass`:**
-
-    ```js
-    sass: {
-      options: {
-        outputStyle: 'expanded',
-        sourceMap: true,
-        includePaths: [
-          'node_modules/aurora-utilities/sass',
-          'node_modules/sanitize.scss'
-        ]
       }
     }
     ```

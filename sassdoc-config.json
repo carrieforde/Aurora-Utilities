@@ -27,7 +27,7 @@
     }
   },
   "herman": {
-    "displayColors": ["hex"],
+    "displayColors": ["hex", "rgba"],
     "customCSS": "dist/sassdoc.css",
     "sass": {
       "jsonfile": "dist/sassdoc.css",
