@@ -6,7 +6,7 @@
 /// @param  {Map}    $z [$z-index] - The map containing z-indeces.
 /// @return {Number}               - The corresponding z-index value.
 @function z($index, $z: $z-index) {
-  @if not $map {
+  @if not $z {
     @error 'Value passed for $map not found!';
   }
   @if not map-get($z, $index) {
